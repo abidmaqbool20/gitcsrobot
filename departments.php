@@ -18,7 +18,8 @@
            <p><i class="icon fa fa-info-circle"></i>&nbsp;Manage all the department details and the department hierarchy in your organization.</p>
         </div>
         <div class="col-md-2">
-          <button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add Department</button>
+        <button type="button" data-controls-modal="#customizedash"data-backdrop="static" data-keyboard="false" class="btn btn-success" data-toggle="modal" data-target="#customizedash"> Add Department </button>
+          <!-- <button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add Department</button> -->
           <a href="#" class="top-info-btn"><i class="icon fa fa-info-circle"></i></a>
         </div>
       </div>
@@ -176,4 +177,51 @@
     </section>
  
   </div>
+
+  <!-- Modal Start Here  -->
+ <!-- Modal -->
+  <div class="modal right fade" id="customizedash"  role="dialog" aria-labelledby="customizedash">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="customizedash">Dashboard Customization </h4>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+              <!-- Nav tabs -->
+                <div class="card">
+                  <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  adsdsad  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"><button type="button" id="" class="btn btn-primary">Update</button><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button></div>
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div><!-- modal -->
+  
+  
 <?php include("includes/footer.php");  ?>
