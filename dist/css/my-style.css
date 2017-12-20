@@ -1,3 +1,10 @@
+.content-wrapper
+{
+  overflow-y: scroll !important;
+}
+
+
+
 .holiday-box
 {
   padding: 6px 0 6px 5px;

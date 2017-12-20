@@ -438,6 +438,99 @@
 	            </form>
 	          </div>
 	        </div>
+	        <div class="col-md-12">
+          
+	          <div class="box box-warning">
+	            <div class="box-header with-border">
+	              <h3 class="box-title">Company Working Days</h3>
+	            </div>
+	            
+	            <form role="form">
+	               <div class="box-body no-padding">
+		              <table class="table table-striped">
+		                <tbody>
+		                <tr>
+		                 
+		                  <th>Day</th>
+		                  <th>All</th>
+		                  <th>1st</th>
+		                  <th>2nd</th>
+		                  <th>3rd</th>
+		                  <th>4th</th>
+		                  <th>5th</th>
+		                   
+		                </tr>
+		                <tr>
+		                  <td>Monady</td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                </tr>
+		                <tr>
+		                  <td>Tuesday</td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                </tr>
+		               
+		                <tr>
+		                  <td>Wednesday</td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                </tr>
+		                <tr>
+		                  <td>Thursday</td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                </tr>
+		                <tr>
+		                  <td>Friday</td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                </tr>
+		                <tr>
+		                  <td>Saturday</td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                </tr>
+		                 <tr>
+		                  <td>Sunday</td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                  <td><input type="checkbox"></td>
+		                </tr>
+			              </tbody>
+			          </table>
+            </div>
+	               
+	            </form>
+	          </div>
+	        </div>
         	<div class="col-md-12">
 	          
 	          <div class="box box-primary">

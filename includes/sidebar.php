@@ -35,7 +35,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-building-o"></i> <span>Organization</span>
             <span class="pull-right-container">
