@@ -260,8 +260,13 @@ padding-left: 0;
      -->
     <section class="action_header_info" style="">
         <div class="row">
+
             <div class="col-md-12 col-sm-12 col-xs-12 padlft0" style="padding-left: 0px;">
               <div class="col-md-2 col-sm-5 col-xs-12 pull-left padlft0" >
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padlft0" style="  padding-left: 0px;">
+              <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 pull-left padlft0" >
+
                 <div class="form-group padlft0">
                     <div class="form-group padlft0">
                       <select class="form-control select2 " >
@@ -274,10 +279,10 @@ padding-left: 0;
               </div>
             </div>
 
-            <div class="col-md-offset-5 col-md-5 col-sm-7 col-xs-12 pull-right padlft0"  style="padding-left: 0px;">
-              <div class="col-md-offset-3 col-md-9 col-sm-12 col-xs-12 pull-right padlft0" style="padding-left: 0px; padding-right: 0px;">
+            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-8 col-xs-12 pull-right padlft0"  style="padding-left: 0px;">
+              <div class=" col-lg-offset-4 col-md-offset-2 col-lg-8 col-md-10 col-sm-12 col-xs-12 pull-right padlft0" style="padding-left: 0px; padding-right: 0px;">
                 
-                <div class="col-md-4 col-sm-6 col-xs-12 pull-left padlft0"  style="padding-left: 0px;">
+                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 pull-left padlft0"  style="padding-left: 0px;">
                    <div class="form-group padlft0"  style="padding-left: 0px;">
                      <div class="form-group padlft0">
                       <select class="form-control select2  " >
@@ -289,15 +294,19 @@ padding-left: 0;
                     </div>
                    </div>
                 </div>
-                 <div class="col-md-3 col-sm-4 col-xs-10 pull-left padlft0"  style="padding-left: 0px;">
+                 <div class="col-lg-2 col-md-3 col-sm-3 col-xs-8 pull-left padlft0"  style="padding-left: 0px;">
                   <button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add New</button>
                 </div>
                 
-                <div class="col-md-2 col-sm-2 col-xs-2 pull-left"  >
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-2" style="text-align: center;"  >
                   <button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel" style="padding-left: 0px;">
                     <i class="fa fa-filter " aria-hidden="true"></i>
                   </button>
+                  <button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel" style="padding-left: 0px;">
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </button>
                 </div>
+               
                
               </div>
                
