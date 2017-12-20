@@ -109,6 +109,8 @@ padding-left: 0;
 .padlft0 {
   padding-left: 0 !important;
 }
+ 
+
 } 
  </style>
    
@@ -117,7 +119,7 @@ padding-left: 0;
       <li><a data-toggle="tab" href="#2">About us</a></li>
       <li><a data-toggle="tab" href="#3">Contact us</a></li>
     </ul>
-    <section class="action_header_info" style="">
+   <!--  <section class="action_header_info" style="">
       <div class="row rowfilter">
         <div class="col-md-5 col-sm-5 padlft0 col-xs-12">
           <form>
@@ -158,7 +160,53 @@ padding-left: 0;
         </div>
       </div>
     </section>
-  
+     -->
+    <section class="action_header_info" style="">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 padlft0" style="margin-left: -20px; padding-left: 0px;">
+              <div class="col-md-2 col-sm-5 col-xs-12 pull-left padlft0" >
+                <div class="form-group padlft0">
+                    <div class="form-group padlft0">
+                      <select class="form-control select2 " >
+                        <option selected="selected">Alabama</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                    
+                      </select>
+                    </div>
+              </div>
+            </div>
+
+            <div class="col-md-offset-5 col-md-5 col-sm-7 col-xs-12 pull-right padlft0"  style="padding-left: 0px;">
+              <div class="col-md-offset-3 col-md-9 col-sm-12 col-xs-12 pull-right padlft0" style="padding-left: 0px; padding-right: 0px;">
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 pull-left padlft0"  style="padding-left: 0px;">
+                   <div class="form-group padlft0"  style="padding-left: 0px;">
+                     <div class="form-group padlft0">
+                      <select class="form-control select2  " >
+                        <option selected="selected">All Data</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                    
+                      </select>
+                    </div>
+                   </div>
+                </div>
+                 <div class="col-md-3 col-sm-4 col-xs-10 pull-left padlft0"  style="padding-left: 0px;">
+                  <button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add New</button>
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-2 pull-left"  >
+                  <button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel" style="padding-left: 0px;">
+                    <i class="fa fa-filter " aria-hidden="true"></i>
+                  </button>
+                </div>
+               
+              </div>
+               
+            </div>
+        </div>
+    </section>
     <section class="content">
 
      
