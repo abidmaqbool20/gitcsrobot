@@ -183,14 +183,14 @@
   <div class="modal right fade" id="customizedash"  role="dialog" aria-labelledby="customizedash">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header modal-header-size">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="customizedash">Dashboard Customization </h4>
         </div>
         <div class="modal-body">
           <div class="container">
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 modal-body-container">
               <!-- Nav tabs -->
                 <div class="card">
                   <ul class="nav nav-tabs" role="tablist">
@@ -218,10 +218,13 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer"><button type="button" id="" class="btn btn-primary">Update</button><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button></div>
-      </div><!-- modal-content -->
-    </div><!-- modal-dialog -->
-</div><!-- modal -->
+        <div class="modal-footer">
+          <button type="button" id="" class="btn btn-success btn-sm pull-left"><i class="fa fa-check"></i> Submit </button>
+          <button type="button" class="btn btn-danger btn-sm pull-left" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
+        </div>
+      </div> 
+    </div> 
+</div> 
   
   
 <?php include("includes/footer.php");  ?>

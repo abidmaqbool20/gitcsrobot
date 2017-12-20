@@ -1,3 +1,7 @@
+.holiday-box
+{
+  padding: 6px 0 6px 5px;
+}
 .company-logo
 {
 	margin: 0 auto;
@@ -96,7 +100,7 @@
   
   .modal.right .modal-body {
     padding: 0 0px 0 0 !important;
-    height: 80% !important;
+    min-height: 85% !important;
   }
 
   .modal.right.fade .modal-dialog {
@@ -173,5 +177,20 @@
     margin: 0px !important;
 }
 
+.modal-header .close
+{
+      opacity: 0.5 !important;
+    font-size: 30px !important;
 
-/*Add Departments Modal close Here */
+}
+ 
+ .modal-body-container
+ {
+  padding-left: 0px;
+ }
+
+.modal-header-size
+{
+     padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
