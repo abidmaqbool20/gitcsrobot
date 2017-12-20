@@ -160,7 +160,7 @@
   #customizedash .nav-tabs > li.active > a::after,  .nav-tabs > li:hover > a::after { transform: scale(1); }
 
 .tab-pane { padding: 15px 0 !important; }
-.tab-content{padding:20px 0 !important}
+.tab-content{padding:20px 0 }
 .divitem {
     width: 73%;
     height: 40px;
