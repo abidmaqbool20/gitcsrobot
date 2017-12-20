@@ -34,6 +34,12 @@ padding: 12px 15px;
 
 
 }
+.paddingnone {
+  border-top:0 !important;
+  padding: 0 !important;
+  margin-bottom: none !important;
+}
+
 .resulttable th,td,input {
    white-space: nowrap !important;
 }
@@ -90,7 +96,10 @@ padding-left: 20px;
 .tab-content-filter {
   padding: 0 20px 10px 0 !important
 }
-<<<<<<< HEAD
+.bobbodyarea {
+  height: 70vh !important;
+  overflow-x: auto;
+}
 /*-- Media Queries start Here  -- */
 
 @media only screen and (min-device-width: 1024px) 
@@ -185,7 +194,7 @@ padding-left: 20px;
         width: 100% !important;
        } 
   }
-=======
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px)  {
@@ -208,7 +217,7 @@ padding-left: 0;
  
 
 } 
->>>>>>> e8b78edb99d5ff30d09c64ec0849906aeead7a75
+
  </style>
    
     <ul class="nav nav-pills">
@@ -216,48 +225,8 @@ padding-left: 0;
       <li><a data-toggle="tab" href="#2">About us</a></li>
       <li><a data-toggle="tab" href="#3">Contact us</a></li>
     </ul>
-   <!--  <section class="action_header_info" style="">
-      <div class="row rowfilter">
-        <div class="col-md-5 col-sm-5 padlft0 col-xs-12">
-          <form>
-            <div class="form-group padlft0">
-              <select class="form-control select2" >
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-                <option>California</option>
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-              </select>
-          </div>
-          </form>
-        </div>
-        <div class="col-md-7 col-sm-7 col-xs-12 padlft0 ">
-          <div class="row rowfilterght">
-            <div class="col-md-3 col-md-push-3"></div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-              <form>
-                <div class="form-group">
-                  <select class="form-control">
-                    <option selected="selected">All Data</option>
-                    <option>Alaska</option>
-                    <option>California</option>
-                    <option>Delaware</option>
-                    <option>Tennessee</option>
-                    <option>Texas</option>
-                    <option>Washington</option>
-                  </select>
-                </div>
-              </form>
-            </div>
-            <div class="col-md-3 col-sm-4 padlft0 col-xs-3 "><button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add New</button></div>
-            <div class="col-md-2 col-sm-2 padlft0 col-xs-8"><button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel"><i class="fa fa-filter " aria-hidden="true"></i></button></div>
-          </div>
-        </div>
-      </div>
-    </section>
-     -->
+  
+  
     <section class="action_header_info" style="">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padlft0" style="  padding-left: 0px;">
@@ -308,12 +277,12 @@ padding-left: 0;
             </div>
         </div>
     </section>
-    <section class="content">
+    <section class="content paddingnone">
 
      
-      <div class="box">
+      <div class="box paddingnone">
         
-        <div class="box-body" style=" overflow-x: auto;">
+        <div class="box-body bobbodyarea">
           <div class="tab-content tab-content-filter">
             <div class="tab-pane active" id="1">
               
@@ -342,6 +311,12 @@ padding-left: 0;
                                 <th>Employee type </th>
                                 <th>Marital Status </th>
                                 <th>About Me </th>
+                                <th>Mobile Phone</th>
+                                <th>Address</th>
+                                <th>Employee Status </th>
+                                <th>Employee type </th>
+                                <th>Marital Status </th>
+                                <th>About Me </th>
 
 
                               </tr>
@@ -349,6 +324,11 @@ padding-left: 0;
                                 <th colspan="4"></th>
                                
 
+                               <th><input type="text" class="form-control" name=""></th>
+                               <th><input type="text" class="form-control" name=""></th>
+                               <th><input type="text" class="form-control" name=""></th>
+                               <th><input type="text" class="form-control" name=""></th>
+                               <th><input type="text" class="form-control" name=""></th>
                                <th><input type="text" class="form-control" name=""></th>
                                <th><input type="text" class="form-control" name=""></th>
                                <th><input type="text" class="form-control" name=""></th>
@@ -394,6 +374,12 @@ padding-left: 0;
                                 <td>IT </td>
                                 <td>Database Adminstrator</td>
                                 <td> 9 September 2016 </td>
+                                <td> Murtaza </td>
+                                <td>03136410009 </td>
+                                <td> Active </td>
+                                <td> Contract </td>
+                                <td> Sahiwal </td>
+                                <td> Single </td>
                                 <td> Murtaza </td>
                                 <td>03136410009 </td>
                                 <td> Active </td>
