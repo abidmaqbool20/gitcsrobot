@@ -37,7 +37,7 @@ padding: 12px 15px;
 .paddingnone {
   border-top:0 !important;
   padding: 0 !important;
-  margin-bottom: none !important;
+  margin-bottom: 0 !important;
 }
 
 .resulttable th,td,input {
@@ -57,7 +57,7 @@ padding: 12px 15px;
     border-left: 0px;
     border-right: 0px;
     border-radius: 0px;
-    padding: 14px 20px 14px 40px;
+    padding: 15px 20px 3px 40px;
     background-color: #fff;
     margin-bottom: 0px;
 }
@@ -97,7 +97,7 @@ padding-left: 20px;
   padding: 0 20px 10px 0 !important
 }
 .bobbodyarea {
-  height: 70vh !important;
+  min-height: 83vh !important;
   overflow-x: auto;
 }
 /*-- Media Queries start Here  -- */
@@ -158,7 +158,7 @@ padding-left: 20px;
         border-left: 0px;
         border-right: 0px;
         border-radius: 0px;
-        padding: 14px 20px 14px 40px;
+       padding: 15px 20px 3px 40px;
         background-color: #fff;
         margin-bottom: 0px;
       } 
@@ -181,7 +181,7 @@ padding-left: 20px;
         border-left: 0px;
         border-right: 0px;
         border-radius: 0px;
-        padding: 14px 20px 14px 40px;
+        padding: 15px 20px 3px 40px;
         background-color: #fff;
         margin-bottom: 0px;
     } 
@@ -282,9 +282,9 @@ padding-left: 0;
      
       <div class="box paddingnone">
         
-        <div class="box-body bobbodyarea">
+        <div class="box-body bobbodyarea"  style="padding: 0 !important;">
           <div class="tab-content tab-content-filter">
-            <div class="tab-pane active" id="1">
+            <div class="tab-pane active" id="1" style="padding: 0 !important;">
               
               <div class="row">
                    <table class="table table-hover table-stripend table-bordered resulttable">
@@ -402,10 +402,6 @@ padding-left: 0;
               <h3>add clearfix to tab-content (see the css)</h3>
             </div>
           </div>
-        </div>
-  
-        <div class="box-footer">
-          Footer
         </div>
   
       </div>
