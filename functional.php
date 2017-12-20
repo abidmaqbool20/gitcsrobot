@@ -24,6 +24,7 @@
   font-size: 22px !important;
   cursor: pointer;
 }
+
  </style>
     <section class="content-header">
       <h1>
@@ -183,7 +184,7 @@
                           <tbody>
                              <tr>
                               <td id="actinlist">
-                                <div class="dropdown" style="display: none;" id="showafter" >
+                                <div class="dropdown action-dropdown" style="display: none;" id="showafter" >
                                   <div class="dropdown-toggle drplist"  data-toggle="dropdown">---</div>
                                   <ul class="dropdown-menu">
                                     <li><a href="#">HTML</a></li>
@@ -238,11 +239,5 @@
     </section>
  
   </div>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("#actinlist").hover(function(){
-      $("#showafter").show();
-    });
-  })
-</script>
 <?php include("includes/footer.php");  ?>
+ 
