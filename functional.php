@@ -276,8 +276,8 @@ padding-left: 0;
 
             <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-8 col-xs-12 pull-right padlft0"  style="padding-left: 0px;">
               <div class=" col-lg-offset-4 col-md-offset-2 col-lg-8 col-md-10 col-sm-12 col-xs-12 pull-right padlft0" style="padding-left: 0px; padding-right: 0px;">
-                
-                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 pull-left padlft0"  style="padding-left: 0px;">
+                <div class="col-lg-4 col-md-2"></div>
+                <div class="col-lg-4 col-md-3 col-sm-5 col-xs-12 pull-left padlft0"  style="padding-left: 0px;">
                    <div class="form-group padlft0"  style="padding-left: 0px;">
                      <div class="form-group padlft0">
                       <select class="form-control select2  " >
