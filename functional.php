@@ -90,26 +90,100 @@ padding-left: 20px;
 .tab-content-filter {
   padding: 0 20px 10px 0 !important
 }
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px)  {
-   .rowfilterght select {
-  width: 130px !important;
-}
-.action_header_info .select2-container {
-  min-width: 115px;
-  max-width: 230px;
-  width: auto;
-}
-.filteri i {
-font-size: 26px;
-color: #3c8dbc;
-padding-left: 0;
-}
-.padlft0 {
-  padding-left: 0 !important;
-}
-} 
+/*-- Media Queries start Here  -- */
+
+@media only screen and (min-device-width: 1024px) 
+  {
+    .rowfilterght select 
+      {
+        width: 190px !important;
+      }
+    .action_header_info .select2-container 
+      {
+        min-width: 145px !important;
+        max-width: 230px;
+        width: auto;
+      }
+    .filteri i 
+      {
+        font-size: 26px;
+        color: #3c8dbc;
+        padding-left: 0;
+      }
+    .padlft0 
+      {
+        padding-left: 0 !important;
+      }
+  }
+@media only screen  and (min-device-width: 768px) 
+  {
+    .rowfilterght select {
+        width: 130px !important;
+      }
+    .action_header_info .select2-container 
+      {
+        min-width: 115px !important;
+        max-width: 230px;
+        width: auto;
+      }
+    .filteri i 
+      {
+        font-size: 26px;
+        color: #3c8dbc;
+        padding-left: 0;
+      }
+    .padlft0 
+      {
+        padding-left: 0 !important;
+      }
+  }
+@media only screen and (min-device-width: 360px) 
+  {
+    .action_header_info 
+      {
+        height: auto !important;
+        box-shadow: none;
+        border-bottom: 1px solid #e9e9e9;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        padding: 14px 20px 14px 40px;
+        background-color: #fff;
+        margin-bottom: 0px;
+      } 
+    .rowfilterght select 
+      {
+        width: 66% !important;
+      }
+    .action_header_info .select2-container 
+      {
+        width: 100% !important;
+      } 
+  }
+@media only screen  and (min-device-width: 375px) 
+  {
+    .action_header_info {
+        height: auto !important;
+        box-shadow: none;
+        border-bottom: 1px solid #e9e9e9;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        padding: 14px 20px 14px 40px;
+        background-color: #fff;
+        margin-bottom: 0px;
+    } 
+    .rowfilterght select 
+      {
+        width: 66% !important;
+      }
+    .action_header_info .select2-container 
+      {
+        width: 100% !important;
+       } 
+  }
  </style>
    
     <ul class="nav nav-pills">
@@ -122,7 +196,7 @@ padding-left: 0;
         <div class="col-md-5 col-sm-5 padlft0 col-xs-12">
           <form>
             <div class="form-group padlft0">
-              <select class="form-control select2 col-sm-3 " >
+              <select class="form-control select2" >
                 <option selected="selected">Alabama</option>
                 <option>Alaska</option>
                 <option>California</option>
@@ -134,13 +208,13 @@ padding-left: 0;
           </div>
           </form>
         </div>
-        <div class="col-md-7 col-sm-7 col-xs-12 padlft0 rowfilterght">
-          <div class="row">
-            <div class="col-md-6 col-md-push-6"></div>
-            <div class="col-md-2 col-sm-6 col-xs-12">
+        <div class="col-md-7 col-sm-7 col-xs-12 padlft0 ">
+          <div class="row rowfilterght">
+            <div class="col-md-3 col-md-push-3"></div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
               <form>
                 <div class="form-group">
-                  <select class="form-control" style="width: 100%;">
+                  <select class="form-control">
                     <option selected="selected">All Data</option>
                     <option>Alaska</option>
                     <option>California</option>
@@ -152,8 +226,8 @@ padding-left: 0;
                 </div>
               </form>
             </div>
-            <div class="col-md-1 col-sm-4 padlft0 col-xs-6 "><button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add New</button></div>
-            <div class="col-md-2 col-sm-2 padlft0 col-xs-6"><button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel"><i class="fa fa-filter " aria-hidden="true"></i></button></div>
+            <div class="col-md-3 col-sm-4 padlft0 col-xs-3 "><button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add New</button></div>
+            <div class="col-md-2 col-sm-2 padlft0 col-xs-8"><button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel"><i class="fa fa-filter " aria-hidden="true"></i></button></div>
           </div>
         </div>
       </div>
