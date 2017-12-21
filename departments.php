@@ -18,7 +18,7 @@
            <p><i class="icon fa fa-info-circle"></i>&nbsp;Manage all the department details and the department hierarchy in your organization.</p>
         </div>
         <div class="col-md-2">
-        <button type="button" data-controls-modal="#customizedash"data-backdrop="static" data-keyboard="false" class="btn btn-success" data-toggle="modal" data-target="#customizedash"> Add Department </button>
+        <button type="button" data-controls-modal="#customizedash" data-backdrop="static" data-keyboard="false" class="btn btn-success" data-toggle="modal" data-target="#customizedash"> Add Department </button>
           <!-- <button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add Department</button> -->
           <a href="#" class="top-info-btn"><i class="icon fa fa-info-circle"></i></a>
         </div>

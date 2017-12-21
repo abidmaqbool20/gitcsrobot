@@ -4,220 +4,6 @@
 
 <style type="text/css">
 
-.nav-pills {
-  padding-left: 20px;
-}
-.nav-pills > .active > a {
-  text-decoration: none;
-  border-radius:0px;
-  border-bottom: 2px solid #d971ae !important;
-  border-top: none !important;
-  font-weight: none !important;
-padding: 12px 15px;
-  color: #d971ae !important;
-  background-color: transparent !important;
-
-}
-.nav-pills > li > a:hover {
-  text-decoration: none;
-  border-radius:0px;
-  color: #d971ae !important;
-  background-color: transparent !important;
-}
-.nav-pills > li > a{
-  border-top: none !important;
-  font-weight: none;
-  border-radius:0px;
-  font-size: 15px;
-  margin-bottom: 2px;
-  padding: 12px 15px;
-
-
-}
-.paddingnone {
-  border-top:0 !important;
-  padding: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.resulttable th,td,input {
-   white-space: nowrap !important;
-}
-.drplist {
-  font-weight: bold;
-  font-size: 22px !important;
-  cursor: pointer;
-}
-
-.action_header_info {
-      height: 60px;
-    box-shadow: none;
-    border-bottom: 1px solid #e9e9e9;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 0px;
-    padding: 15px 20px 3px 40px;
-    background-color: #fff;
-    margin-bottom: 0px;
-}
-.action_header_info .select2-container {
-  min-width: 115px;
-  max-width: 230px;
-  width: auto;
-}
-.rowfilter {
-
-}
-
-.rowfilterght select {
-  width: 155px !important;
-}
-.filteri {
-background-color: transparent; 
-border: none !important;
-}
-.filteri i {
-font-size: 26px;
-color: #3c8dbc;
-padding-left: 20px;
-}
-.filterform {
-  padding: 0 25px 10px 20px !important;
-}
-
-}
-.padlft0 {
-  padding-left: 0 !important;
-}
-.padrght0 {
-  padding-left: 0 !important;
-}
-.tab-content-filter {
-  padding: 0 20px 10px 0 !important
-}
-.bobbodyarea {
-  min-height: 83vh !important;
-  overflow-x: auto;
-}
-/*-- Media Queries start Here  -- */
-
-@media only screen and (min-device-width: 1024px) 
-  {
-    .rowfilterght select 
-      {
-        width: 190px !important;
-      }
-    .action_header_info .select2-container 
-      {
-        min-width: 145px !important;
-        max-width: 230px;
-        width: auto;
-      }
-    .filteri i 
-      {
-        font-size: 26px;
-        color: #3c8dbc;
-        padding-left: 0;
-      }
-    .padlft0 
-      {
-        padding-left: 0 !important;
-      }
-  }
-@media only screen  and (min-device-width: 768px) 
-  {
-    .rowfilterght select {
-        width: 130px !important;
-      }
-    .action_header_info .select2-container 
-      {
-        min-width: 115px !important;
-        max-width: 230px;
-        width: auto;
-      }
-    .filteri i 
-      {
-        font-size: 26px;
-        color: #3c8dbc;
-        padding-left: 0;
-      }
-    .padlft0 
-      {
-        padding-left: 0 !important;
-      }
-  }
-@media only screen and (min-device-width: 360px) 
-  {
-    .action_header_info 
-      {
-        height: auto !important;
-        box-shadow: none;
-        border-bottom: 1px solid #e9e9e9;
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-radius: 0px;
-       padding: 15px 20px 3px 40px;
-        background-color: #fff;
-        margin-bottom: 0px;
-      } 
-    .rowfilterght select 
-      {
-        width: 66% !important;
-      }
-    .action_header_info .select2-container 
-      {
-        width: 100% !important;
-      } 
-  }
-@media only screen  and (min-device-width: 375px) 
-  {
-    .action_header_info {
-        height: auto !important;
-        box-shadow: none;
-        border-bottom: 1px solid #e9e9e9;
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-radius: 0px;
-        padding: 15px 20px 3px 40px;
-        background-color: #fff;
-        margin-bottom: 0px;
-    } 
-    .rowfilterght select 
-      {
-        width: 66% !important;
-      }
-    .action_header_info .select2-container 
-      {
-        width: 100% !important;
-       } 
-  }
-
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px)  {
-   .rowfilterght select {
-  width: 130px !important;
-}
-.action_header_info .select2-container {
-  min-width: 115px;
-  max-width: 230px;
-  width: auto;
-}
-.filteri i {
-font-size: 26px;
-color: #3c8dbc;
-padding-left: 0;
-}
-.padlft0 {
-  padding-left: 0 !important;
-}
- 
-
-} 
-
  </style>
    
     <ul class="nav nav-pills">
@@ -259,16 +45,28 @@ padding-left: 0;
                    </div>
                 </div>
                  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-8 pull-left padlft0"  style="padding-left: 0px;">
-                  <button class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add New</button>
+                  <button class="btn btn-success" data-target="#addnew" data-controls-modal="#addnew" data-backdrop="static" data-keyboard="false" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp; Add New</button>
                 </div>
                 
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-2" style="text-align: center;"  >
                   <button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel" style="padding-left: 0px;">
                     <i class="fa fa-filter " aria-hidden="true"></i>
                   </button>
-                  <button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel" style="padding-left: 0px;">
+                 
+                  <div class="btn-group">
+                  <button class="filteri dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true" style="padding-left: 0px;">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+
                   </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+
                 </div>
                
                
@@ -292,6 +90,7 @@ padding-left: 0;
                          
                          
                             <tr>
+                                <th></th>
                                 <th></th>
                                
                                 <th><input type="checkbox" name="" id="selectallcheck"></th>
@@ -321,7 +120,24 @@ padding-left: 0;
 
                               </tr>
                               <tr id="filter-panel" class="collapse filter-panel"  style="background-color: #eeefff;">
-                                <th colspan="4"></th>
+                              <th></th>
+                                <th colspan="4" style=" margin-left: 20px;">
+                                  <div class="btn-group open">
+                                    <button type="button" class="btn btn-danger btn-flat">Action</button>
+                                    <button type="button" class="btn btn-danger btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                      <span class="caret"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#">Action</a></li>
+                                      <li><a href="#">Another action</a></li>
+                                      <li><a href="#">Something else here</a></li>
+                                      <li class="divider"></li>
+                                      <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                  </div>
+
+                                </th>
                                
 
                                <th><input type="text" class="form-control" name=""></th>
@@ -352,9 +168,10 @@ padding-left: 0;
                             </thead>
                             <tbody>
                                <tr>
+                               <td></td>
                                 <td id="actinlist">
-                                  <div class="dropdown action-dropdown" style="display: none;" id="showafter" >
-                                    <div class="dropdown-toggle drplist"  data-toggle="dropdown">---</div>
+                                  <div class="dropdown action-dropdown"  id="showafter" >
+                                    <div class="dropdown-toggle drplist"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
                                     <ul class="dropdown-menu">
                                       <li><a href="#">HTML</a></li>
                                       <li><a href="#">CSS</a></li>
@@ -409,5 +226,52 @@ padding-left: 0;
     </section>
  
   </div>
+<!-- Modal Start Here -->
+   <div class="modal right fade" id="addnew"  role="dialog" aria-labelledby="addnew">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header modal-header-size">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="addnew">Dashboard Customization </h4>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 modal-body-container">
+              <!-- Nav tabs -->
+                <div class="card">
+                  <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  Attendence  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                      <div class="divitem"><i class="fa fa-bars fa-rotate-180 " aria-hidden="true"></i>  adsdsad  <label class="checkbox FR"><input type="checkbox"></label> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="" class="btn btn-success btn-sm pull-left"><i class="fa fa-check"></i> Submit </button>
+          <button type="button" class="btn btn-danger btn-sm pull-left" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
+        </div>
+      </div> 
+    </div> 
+</div> 
+  
 <?php include("includes/footer.php");  ?>
  
