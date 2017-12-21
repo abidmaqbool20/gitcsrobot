@@ -114,7 +114,19 @@
                          
                             <tr>
                                 <th></th>
-                                <th></th>
+                                <th>  
+                                 
+                                   <div class="dropdown action-dropdown"  id="showafter" >
+                                    <div class="dropdown-toggle drplist"  data-toggle="dropdown"><i class="fa fa-caret-square-o-down" aria-hidden="true" style="font-size:14px;"></i></div>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">HTML</a></li>
+                                      <li><a href="#">CSS</a></li>
+                                      <li><a href="#">JavaScript</a></li>
+                                    </ul>
+                                  </div>
+
+                                    
+                                </th>
                                
                                 <th><input type="checkbox" name="" id="selectallcheck"></th>
                                 <th>Sr #</th>
