@@ -102,12 +102,12 @@
   }
   .modal.right .modal-content {
     height: 100% !important;
-    overflow-y: auto !important;
+
   }
   
   .modal.right .modal-body {
     padding: 0 0px 0 0 !important;
-    min-height: 85% !important;
+    min-height: 89% !important;
   }
 
   .modal.right.fade .modal-dialog {
@@ -120,7 +120,6 @@
   
   .modal.right.fade.in .modal-dialog {
     right: 0 !important;
-    top: 50px !important;
 
   }
 

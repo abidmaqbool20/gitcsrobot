@@ -1,7 +1,17 @@
 <?php include("includes/header.php");  ?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#dismiss_filter").click(function(){
+        $("#filter-panel").hide();
+    });
+});
+</script>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 <style type="text/css">
 
  </style>
@@ -45,7 +55,7 @@
                    </div>
                 </div>
                  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-8 pull-left padlft0"  style="padding-left: 0px;">
-                  <button class="btn btn-success" data-target="#addnew" data-controls-modal="#addnew" data-backdrop="static" data-keyboard="false" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp; Add New</button>
+                  <button class="btn btn-success" data-target="#customizedash" data-controls-modal="#customizedash" data-backdrop="static" data-keyboard="false" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp; Add New</button>
                 </div>
                 
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-2" style="text-align: center;"  >
@@ -58,7 +68,8 @@
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
 
                   </button>
-                  <ul class="dropdown-menu" role="menu">
+                 
+                  <ul class="dropdown-menu pull-right" role="menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
                     <li><a href="#">Something else here</a></li>
@@ -120,11 +131,12 @@
 
                               </tr>
                               <tr id="filter-panel" class="collapse filter-panel"  style="background-color: #eeefff;">
-                              <th></th>
-                                <th colspan="4" style=" margin-left: 20px;">
+                              <th colspan="2"><button type="button" class="close" aria-label="Close"><span aria-hidden="true" id="dismiss_filter" style="font-size: 34px;">×</span></button></th>
+                              
+                                <th colspan="3">
                                   <div class="btn-group open">
-                                    <button type="button" class="btn btn-danger btn-flat">Action</button>
-                                    <button type="button" class="btn btn-danger btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <button type="button" class="btn btn-warning btn-flat">Action</button>
+                                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                                       <span class="caret"></span>
                                       <span class="sr-only">Toggle Dropdown</span>
                                     </button>
@@ -227,12 +239,12 @@
  
   </div>
 <!-- Modal Start Here -->
-   <div class="modal right fade" id="addnew"  role="dialog" aria-labelledby="addnew">
+   <div class="modal right fade" id="customizedash"  role="dialog" aria-labelledby="customizedash">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header modal-header-size">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="addnew">Dashboard Customization </h4>
+          <h4 class="modal-title" id="customizedash">Dashboard Customization </h4>
         </div>
         <div class="modal-body">
           <div class="container">
