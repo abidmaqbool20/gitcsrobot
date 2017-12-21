@@ -24,7 +24,7 @@
   
   
     <section class="action_header_info" style="">
-        <div class="row">
+        <div class="row" id="default">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padlft0" style="  padding-left: 0px;">
               <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 pull-left padlft0" >
                 <div class="form-group padlft0">
@@ -83,6 +83,18 @@
                
               </div>
                
+            </div>
+        </div>
+        <div class="row" id="actionrec">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padlft0" style="  padding-left: 0px;">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-left padlft0">
+                  <p>
+                <button type="button" class="btn bg-maroon margin">Delete </button>
+                <button type="button" class="btn bg-purple margin">Mass Update</button>
+                
+                <button type="button" class="btn bg-olive margin">Mail Merge Template</button>
+              </p>
+              </div>
             </div>
         </div>
     </section>
