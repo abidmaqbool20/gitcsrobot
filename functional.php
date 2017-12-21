@@ -1,4 +1,38 @@
 <?php include("includes/header.php");  ?>
+
+<style type="text/css">
+  .footer-content {
+        background-color: #ecf0f5;
+    height: 51px;
+    margin: 0;
+    line-height: 51px;
+    text-align: center;
+  }
+/*.footer-content ul { 
+}  
+
+
+ .footer-content .pagination {
+    display: inline-block;
+}
+
+ .footer-content .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+ .footer-content .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ .footer-content .pagination a:hover:not(.active) {background-color: #ddd;}*/
+</style>
 <div class="content-wrapper">
       
 <script type="text/javascript">
@@ -8,18 +42,53 @@
         $("#filter-panel").addClass("filter-panel collapse");
         $("#filter-panel").attr("aria-expanded","false");
     });
+
+    $("#selectallcheck").click(function(){
+        if($("#selectallcheck").is(':checked')) 
+          {
+            $("#actionrec").show();
+            $("#default").hide();
+            $(".table").find(".table_record_checkbox").prop("checked",true);
+            $(".table").find("tr").css("background-color","#ecf0f5");
+
+          }
+       else 
+          {
+            $(".table").find(".table_record_checkbox").prop("checked",false);
+            $(".table").find("tr").css("background-color","");
+            $("#default").show();
+            $("#actionrec").hide();
+          }
+    });
+
+
+     $(".table tr td input[type='checkbox']").click(function(){
+       if($(this).is(':checked')) 
+          {
+             $(this).closest("tr").css("background-color","#ecf0f5");
+
+          }
+       else 
+          {
+            $(this).closest("tr").css("background-color","");
+          }
+       
+    });
+
+
   });
 </script>
  
-   
+  <div class="h45">
     <ul class="nav nav-pills">
       <li class="active"><a data-toggle="tab" href="#1">Home</a></li>
       <li><a data-toggle="tab" href="#2">About us</a></li>
       <li><a data-toggle="tab" href="#3">Contact us</a></li>
     </ul>
+  </div>
   
   
-    <section class="action_header_info" style="">
+    <section class="action_header_info h45 " style="">
         <div class="row" id="default">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padlft0" style="  padding-left: 0px;">
               <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 pull-left padlft0" >
@@ -32,56 +101,53 @@
                     
                       </select>
                     </div>
+                </div>
               </div>
-            </div>
+              <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-8 col-xs-12 pull-right padlft0"  style="padding-left: 0px;">
+                <div class=" col-lg-offset-4 col-md-offset-2 col-lg-8 col-md-10 col-sm-12 col-xs-12 pull-right padlft0" style="padding-left: 0px; padding-right: 0px;">
+                  <div class="col-lg-4 col-md-2"></div>
+                  <div class="col-lg-4 col-md-3 col-sm-5 col-xs-12 pull-left padlft0"  style="padding-left: 0px;">
+                     <div class="form-group padlft0"  style="padding-left: 0px;">
+                       <div class="form-group padlft0">
+                        <select class="form-control select2  " >
+                          <option selected="selected">All Data</option>
+                          <option>Alaska</option>
+                          <option>California</option>
+                      
+                        </select>
+                      </div>
+                     </div>
+                  </div>
+                   <div class="col-lg-2 col-md-3 col-sm-3 col-xs-8 pull-left padlft0"  style="padding-left: 0px;">
+                    <button class="btn btn-success" data-target="#customizedash" data-controls-modal="#customizedash" data-backdrop="static" data-keyboard="false" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp; Add New</button>
+                  </div>
+                  
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-2" style="text-align: center;"  >
+                    <button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel" style="padding-left: 0px;">
+                      <i class="fa fa-filter " aria-hidden="true"></i>
+                    </button>
+                   
+                    <div class="btn-group">
+                    <button class="filteri dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true" style="padding-left: 0px;">
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
 
-            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-8 col-xs-12 pull-right padlft0"  style="padding-left: 0px;">
-              <div class=" col-lg-offset-4 col-md-offset-2 col-lg-8 col-md-10 col-sm-12 col-xs-12 pull-right padlft0" style="padding-left: 0px; padding-right: 0px;">
-                <div class="col-lg-4 col-md-2"></div>
-                <div class="col-lg-4 col-md-3 col-sm-5 col-xs-12 pull-left padlft0"  style="padding-left: 0px;">
-                   <div class="form-group padlft0"  style="padding-left: 0px;">
-                     <div class="form-group padlft0">
-                      <select class="form-control select2  " >
-                        <option selected="selected">All Data</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                    
-                      </select>
-                    </div>
-                   </div>
-                </div>
-                 <div class="col-lg-2 col-md-3 col-sm-3 col-xs-8 pull-left padlft0"  style="padding-left: 0px;">
-                  <button class="btn btn-success" data-target="#customizedash" data-controls-modal="#customizedash" data-backdrop="static" data-keyboard="false" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp; Add New</button>
-                </div>
-                
-                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-2" style="text-align: center;"  >
-                  <button class="filteri" type="button" data-toggle="collapse" data-target="#filter-panel" style="padding-left: 0px;">
-                    <i class="fa fa-filter " aria-hidden="true"></i>
-                  </button>
-                 
-                  <div class="btn-group">
-                  <button class="filteri dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true" style="padding-left: 0px;">
-                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </button>
+                   
+                    <ul class="dropdown-menu pull-right" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
 
-                  </button>
-                 
-                  <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
-
-                </div>
-               
-               
+                  </div>
+                 </div>
               </div>
-               
-            </div>
-        </div>
-        <div class="row" id="actionrec">
+            </div> 
+          </div>
+        <div class="row" id="actionrec" style="display: none;">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padlft0" style="  padding-left: 0px;">
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-left padlft0">
                   <p>
@@ -199,8 +265,8 @@
 
                             </thead>
                             <tbody>
-                               <tr>
-                               <td></td>
+                              <tr>
+                                <td></td>
                                 <td id="actinlist">
                                   <div class="dropdown action-dropdown"  id="showafter" >
                                     <div class="dropdown-toggle drplist"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
@@ -211,7 +277,7 @@
                                     </ul>
                                   </div>
                                 </td>
-                                <td><input type="checkbox" name="checkboxes[]" id="" class="checkboxes" value=""></td>
+                                <td><input type="checkbox" name="checkboxes[]" id="table_record_1" class="table_record_checkbox" value=""></td>
                                 <td> 1 </td>
                                  <td> <img src="assets/images/user.png" width="32" height="32" > </td>
                                 <td> 92016Noman </td>
@@ -236,7 +302,82 @@
                                 <td> Sahiwal </td>
                                 <td> Single </td>
                                 <td> No Important </td>
-                            
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td id="actinlist">
+                                  <div class="dropdown action-dropdown"  id="showafter" >
+                                    <div class="dropdown-toggle drplist"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">HTML</a></li>
+                                      <li><a href="#">CSS</a></li>
+                                      <li><a href="#">JavaScript</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                                <td> 1 </td>
+                                 <td> <img src="assets/images/user.png" width="32" height="32" > </td>
+                                <td> 92016Noman </td>
+
+                                
+                                <td>Muhammad Noman</td>
+                                <td> Naseer Ahmad</td>
+                                <td> noman@gmail.com</td>
+                                <td>IT </td>
+                                <td>Database Adminstrator</td>
+                                <td> 9 September 2016 </td>
+                                <td> Murtaza </td>
+                                <td>03136410009 </td>
+                                <td> Active </td>
+                                <td> Contract </td>
+                                <td> Sahiwal </td>
+                                <td> Single </td>
+                                <td> Murtaza </td>
+                                <td>03136410009 </td>
+                                <td> Active </td>
+                                <td> Contract </td>
+                                <td> Sahiwal </td>
+                                <td> Single </td>
+                                <td> No Important </td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td id="actinlist">
+                                  <div class="dropdown action-dropdown"  id="showafter" >
+                                    <div class="dropdown-toggle drplist"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">HTML</a></li>
+                                      <li><a href="#">CSS</a></li>
+                                      <li><a href="#">JavaScript</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                                <td><input type="checkbox" name="checkboxes[]" id="table_record_3" class="table_record_checkbox" value=""></td>
+                                <td> 1 </td>
+                                 <td> <img src="assets/images/user.png" width="32" height="32" > </td>
+                                <td> 92016Noman </td>
+
+                                
+                                <td>Muhammad Noman</td>
+                                <td> Naseer Ahmad</td>
+                                <td> noman@gmail.com</td>
+                                <td>IT </td>
+                                <td>Database Adminstrator</td>
+                                <td> 9 September 2016 </td>
+                                <td> Murtaza </td>
+                                <td>03136410009 </td>
+                                <td> Active </td>
+                                <td> Contract </td>
+                                <td> Sahiwal </td>
+                                <td> Single </td>
+                                <td> Murtaza </td>
+                                <td>03136410009 </td>
+                                <td> Active </td>
+                                <td> Contract </td>
+                                <td> Sahiwal </td>
+                                <td> Single </td>
+                                <td> No Important </td>
                               </tr>
           
 
@@ -254,7 +395,34 @@
         </div>
   
       </div>
-    
+    <div class="footer-content" >
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li>
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <ul class="pagination pagination-md ">
+        <li><a href="#">«</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">»</a></li>
+      </ul> -->
+    </div>
     </section>
  
   </div>
