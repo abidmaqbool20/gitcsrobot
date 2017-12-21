@@ -188,27 +188,21 @@
               <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
             </label>
           </div>
-          <!-- /.form-group -->
+          
         </form>
       </div>
-      <!-- /.tab-pane -->
+     
     </div>
   </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+ 
   <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
-<!-- <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script> -->
-<!-- jQuery 3 -->
+
+
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4  -->
+ 
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+ 
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>

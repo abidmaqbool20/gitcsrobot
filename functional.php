@@ -1,20 +1,16 @@
 <?php include("includes/header.php");  ?>
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+      
 <script type="text/javascript">
   $(document).ready(function() {
     $("#dismiss_filter").click(function(){
-        $("#filter-panel").hide();
+        $("#filter-panel").removeClass();
+        $("#filter-panel").addClass("filter-panel collapse");
+        $("#filter-panel").attr("aria-expanded","false");
     });
-});
+  });
 </script>
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-<style type="text/css">
-
- </style>
+ 
    
     <ul class="nav nav-pills">
       <li class="active"><a data-toggle="tab" href="#1">Home</a></li>
