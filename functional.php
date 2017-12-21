@@ -8,30 +8,7 @@
     line-height: 51px;
     text-align: center;
   }
-/*.footer-content ul { 
-}  
-
-
- .footer-content .pagination {
-    display: inline-block;
-}
-
- .footer-content .pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-}
-
- .footer-content .pagination a.active {
-    background-color: #4CAF50;
-    color: white;
-    border: 1px solid #4CAF50;
-}
-
- .footer-content .pagination a:hover:not(.active) {background-color: #ddd;}*/
+ 
 </style>
 <div class="content-wrapper">
       
@@ -396,33 +373,37 @@
   
       </div>
     <div class="footer-content" >
-      <nav aria-label="Page navigation">
-        <ul class="pagination">
-          <li>
-            <a href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li>
-            <a href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- <ul class="pagination pagination-md ">
-        <li><a href="#">«</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">»</a></li>
-      </ul> -->
-    </div>
+      <div class="row" style="margin: 0;">
+          <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+              
+            <div class="col-lg-3 col-sm-2"> </div>
+            <div class="col-lg-2 col-md-4 col-sm-3 col-xs-12"> 
+              <select class="form-control" style="margin: 20px 0;">
+                <option>PPR</option>
+                <option>10</option> 
+                <option>100</option> 
+                <option>1000</option> 
+                
+              </select>
+            </div>
+            <div class="col-lg-7 col-md-4 col-sm-7 col-xs-12"> 
+               <ul class="pagination hidden-xs pull-right">
+                <li><a href="#"><<</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">>></a></li>
+              </ul>
+            </div>
+          </div>
+        
+        </div>
+      </div>
     </section>
  
   </div>
