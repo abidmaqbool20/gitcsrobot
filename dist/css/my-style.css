@@ -248,9 +248,8 @@ padding: 12px 15px;
     margin-bottom: 0px;
 }
 .action_header_info .select2-container {
-  min-width: 115px;
-  max-width: 230px;
-  width: auto;
+  width: 230px !important;
+  
 }
 .rowfilter {
 
@@ -286,6 +285,42 @@ padding-left: 20px;
   min-height: 73vh !important;
   overflow-x: auto;
 }
+ .footer-content {
+    height: 58px;
+    line-height: 51px;
+    text-align: center;
+  }
+.footer-content .pagination {
+      float: right ;
+
+}
+ .fixwdth select{
+  width: 200px;
+  text-align: right;
+  float: right;
+
+ }
+ .transp {
+  background-color: transparent !important;
+  border:none !important;
+ }
+ .multicheckselect  {
+    overflow-y: auto;
+    height: 260px !important;
+ }
+ .multicheckselect li  {
+     font-family: "zpfont";
+    color: #458bd6;
+    padding-right: 5px;
+    font-size: 16px;
+    padding-top: 5px;
+ }
+  .btnstyle .btn-default{
+   background-color: #ffffff;
+   border: 1px solid #3c8dbc !important;
+   color: #3c8dbc;
+ 
+   }
 /*-- Media Queries start Here  -- */
 
 @media only screen and (min-device-width: 1024px) 
@@ -332,6 +367,18 @@ padding-left: 20px;
       {
         padding-left: 0 !important;
       }
+    .footer-content {
+        text-align: center;
+        height: auto; 
+      }
+      .footer-content .pagination{
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+  margin-right: auto;
+      }
   }
 @media only screen and (min-device-width: 360px) 
   {
@@ -356,6 +403,27 @@ padding-left: 20px;
       {
         width: 100% !important;
       } 
+      .footer-content {
+        text-align: center;
+        height: auto; 
+      }
+      .padlft0 {
+        padding-left: 10px;
+      }
+    .fixwdth select{
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+     }
+    .footer-content .pagination{  
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 50px;
+    }
   }
 @media only screen  and (min-device-width: 375px) 
   {
@@ -373,12 +441,15 @@ padding-left: 20px;
     } 
     .rowfilterght select 
       {
-        width: 66% !important;
+        width: 100 !important;
       }
     .action_header_info .select2-container 
       {
         width: 100% !important;
        } 
+  .padlft0 {
+    padding-left: 0px;
+}
   }
 
 @media only screen 

@@ -1,107 +1,7 @@
 <?php include("includes/header.php");  ?>
 
-<style type="text/css">
-  .footer-content {
-    height: 58px;
-    line-height: 51px;
-    text-align: center;
-  }
-.footer-content .pagination {
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-
-}
- .fixwdth select{
-  width: 200px;
-  text-align: right;
-
- }
- .transp {
-  background-color: transparent !important;
-  border:none !important;
- }
- .multicheckselect  {
-    overflow-y: auto;
-    height: 260px !important;
- }
- .multicheckselect li  {
-     font-family: "zpfont";
-    color: #458bd6;
-    padding-right: 5px;
-    font-size: 16px;
-    padding-top: 5px;
- }
-   
-</style>
 <div class="content-wrapper">
       
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("#dismiss_filter").click(function(){
-        $("#filter-panel").removeClass();
-        $("#filter-panel").addClass("filter-panel collapse");
-        $("#filter-panel").attr("aria-expanded","false");
-    });
-
-    $("#selectallcheck").click(function(){
-        if($("#selectallcheck").is(':checked')) 
-          {
-            $("#actionrec").show();
-            $("#default").hide();
-            $(".table").find(".table_record_checkbox").prop("checked",true);
-            $(".table").find("tr").css("background-color","#ecf0f5");
-
-          }
-       else 
-          {
-            $(".table").find(".table_record_checkbox").prop("checked",false);
-            $(".table").find("tr").css("background-color","");
-            $("#default").show();
-            $("#actionrec").hide();
-          }
-    });
-
-
-     $(".table tr td input[type='checkbox']").click(function(){
-       if($(this).is(':checked')) 
-          {
-             $(this).closest("tr").css("background-color","#ecf0f5");
-
-          }
-       else 
-          {
-            $(this).closest("tr").css("background-color","");
-          }
-       
-    });
-
-$( '.multicheckselect a' ).on( 'click', function( event ) {
-var options = [];
-   var $target = $( event.currentTarget ),
-       val = $target.attr( 'data-value' ),
-       $inp = $target.find( 'input' ),
-       idx;
-
-   if ( ( idx = options.indexOf( val ) ) > -1 ) {
-      options.splice( idx, 1 );
-      setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
-   } else {
-      options.push( val );
-      setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
-   }
-
-   $( event.target ).blur();
-      
-   console.log( options );
-   return false;
-});
-
-  // $height = (72*$(window).height())/100;
-  // $(".")
-  // console.log($height);
-  // });
-</script>
- 
   <div class="h45">
     <ul class="nav nav-pills">
       <li class="active"><a data-toggle="tab" href="#1">Home</a></li>
@@ -115,7 +15,7 @@ var options = [];
   
     <section class="action_header_info h45 " style="">
         <div class="row" id="default">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padlft0" style="  padding-left: 0px;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padlft0" >
               <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 pull-left padlft0" >
                 <div class="form-group padlft0">
                     <div class="form-group padlft0">
@@ -132,7 +32,7 @@ var options = [];
                 <div class=" col-lg-offset-4 col-md-offset-2 col-lg-8 col-md-10 col-sm-12 col-xs-12 pull-right padlft0" style="padding-left: 0px; padding-right: 0px;">
                   <div class="col-lg-4 col-md-2"></div>
                   <div class="col-lg-4 col-md-3 col-sm-5 col-xs-12 pull-left padlft0"  style="padding-left: 0px;">
-                     <div class="form-group padlft0"  style="padding-left: 0px;">
+                    
                        <div class="form-group padlft0">
                         <select class="form-control select2  " >
                           <option selected="selected">All Data</option>
@@ -141,7 +41,7 @@ var options = [];
                       
                         </select>
                       </div>
-                     </div>
+                 
                   </div>
                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-8 pull-left padlft0"  style="padding-left: 0px;">
                     <button class="btn btn-success" data-target="#customizedash" data-controls-modal="#customizedash" data-backdrop="static" data-keyboard="false" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp; Add New</button>
@@ -174,12 +74,12 @@ var options = [];
           </div>
         <div class="row" id="actionrec" style="display: none;">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padlft0" style="  padding-left: 0px;">
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-left padlft0">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-left padlft0 btnstyle">
                   <p>
-                <button type="button" class="btn bg-maroon margin">Delete </button>
-                <button type="button" class="btn bg-purple margin">Mass Update</button>
+                <button type="button" class="btn btn-danger btn-sm">Delete </button>
+                <button type="button" class="btn btn-default btn-sm">Mass Update</button>
                 
-                <button type="button" class="btn bg-olive margin">Mail Merge Template</button>
+                <button type="button" class="btn btn-default btn-sm">Mail Merge Template</button>
               </p>
               </div>
             </div>
@@ -442,11 +342,11 @@ var options = [];
       </div>
       <div class="box-footer footer-content">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
               Total Records is 20
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
-              <div class="col-sm-6 pull-right">
+            <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6 col-md-4 ">
+              
                  <div class="form-group fixwdth" >
               
                   <select class="form-control" class="">
@@ -456,11 +356,11 @@ var options = [];
                     <option>1000</option> 
                   </select>
                 </div>
-              </div>
+              
                
             </div>
-            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 pull-right">
-              <ul class="pagination hidden-xs ">
+            <div class=" col-lg-3 col-md-4 col-sm-6 col align-self-center col-xs-12  ">
+              <ul class="pagination">
                 <li><a href="#"><<</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>

@@ -46,6 +46,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
   <script  src="https://code.jquery.com/jquery-2.2.4.min.js" > </script>
+  <script  src="dist/js/theme.js" > </script>
+
   
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
