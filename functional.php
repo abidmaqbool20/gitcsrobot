@@ -44,7 +44,7 @@
                  
                   </div>
                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-8 pull-left padlft0"  style="padding-left: 0px;">
-                    <button class="btn btn-success" data-target="#customizedash" data-controls-modal="#customizedash" data-backdrop="static" data-keyboard="false" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp; Add New</button>
+                    <button class="btn btn-success btn-sm" data-target="#customizedash" data-controls-modal="#customizedash" data-backdrop="static" data-keyboard="false" data-toggle="modal"><i class="fa fa-plus"></i>&nbsp; Add New</button>
                   </div>
                   
                   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-2" style="text-align: center;"  >

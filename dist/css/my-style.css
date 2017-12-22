@@ -243,16 +243,28 @@ padding: 12px 15px;
     border-left: 0px;
     border-right: 0px;
     border-radius: 0px;
-    padding: 15px 20px 3px 40px;
+    padding: 11px 20px 0px 40px;
     background-color: #fff;
     margin-bottom: 0px;
+    margin-bottom: -4px;
 }
 .action_header_info .select2-container {
   width: 230px !important;
+  height: 28px !important;
   
 }
+.action_header_info .select2-selection {
+  width: 230px !important;
+  height: 28px !important;
+  padding: 2px 12px !important
+}
+.action_header_info .form-group{
+  margin-bottom: 12px !important;
+}
+.action_header_info .select2-selection .select2-selection__arrow
 .rowfilter {
-
+    position: absolute;
+    top: -3px;
 }
 
 .rowfilterght select {
