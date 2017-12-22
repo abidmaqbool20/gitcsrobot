@@ -1,7 +1,3 @@
-.content-wrapper
-{
-  overflow-y: scroll !important;
-}
 
 
 
@@ -286,8 +282,8 @@ padding-left: 20px;
 .tab-content-filter {
   padding: 0 20px 10px 0 !important
 }
-.bobbodyarea {
-  min-height: 83vh !important;
+.boxbbodyarea {
+  min-height: 73vh !important;
   overflow-x: auto;
 }
 /*-- Media Queries start Here  -- */

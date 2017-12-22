@@ -2,13 +2,36 @@
 
 <style type="text/css">
   .footer-content {
-        background-color: #ecf0f5;
-    height: 51px;
-    margin: 0;
+    height: 58px;
     line-height: 51px;
     text-align: center;
   }
- 
+.footer-content .pagination {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+
+}
+ .fixwdth select{
+  width: 200px;
+  text-align: right;
+
+ }
+ .transp {
+  background-color: transparent !important;
+  border:none !important;
+ }
+ .multicheckselect  {
+    overflow-y: auto;
+    height: 260px !important;
+ }
+ .multicheckselect li  {
+     font-family: "zpfont";
+    color: #458bd6;
+    padding-right: 5px;
+    font-size: 16px;
+    padding-top: 5px;
+ }
+   
 </style>
 <div class="content-wrapper">
       
@@ -52,15 +75,40 @@
        
     });
 
+$( '.multicheckselect a' ).on( 'click', function( event ) {
+var options = [];
+   var $target = $( event.currentTarget ),
+       val = $target.attr( 'data-value' ),
+       $inp = $target.find( 'input' ),
+       idx;
 
-  });
+   if ( ( idx = options.indexOf( val ) ) > -1 ) {
+      options.splice( idx, 1 );
+      setTimeout( function() { $inp.prop( 'checked', false ) }, 0);
+   } else {
+      options.push( val );
+      setTimeout( function() { $inp.prop( 'checked', true ) }, 0);
+   }
+
+   $( event.target ).blur();
+      
+   console.log( options );
+   return false;
+});
+
+  // $height = (72*$(window).height())/100;
+  // $(".")
+  // console.log($height);
+  // });
 </script>
  
   <div class="h45">
     <ul class="nav nav-pills">
       <li class="active"><a data-toggle="tab" href="#1">Home</a></li>
-      <li><a data-toggle="tab" href="#2">About us</a></li>
-      <li><a data-toggle="tab" href="#3">Contact us</a></li>
+      <li><a data-toggle="tab" href="#2">Birthday Folks</a></li>
+      <li><a data-toggle="tab" href="#3">Trainees</a></li>
+      <li><a data-toggle="tab" href="#3">Favourites</a></li>
+
     </ul>
   </div>
   
@@ -137,12 +185,12 @@
             </div>
         </div>
     </section>
-    <section class="content paddingnone">
+    <section class="content paddingnone responsive" >
 
      
       <div class="box paddingnone">
         
-        <div class="box-body bobbodyarea"  style="padding: 0 !important;">
+        <div class="box-body boxbbodyarea"  style="padding: 0 !important;">
           <div class="tab-content tab-content-filter">
             <div class="tab-pane active" id="1" style="padding: 0 !important;">
               
@@ -155,14 +203,25 @@
                                 <th></th>
                                 <th>  
                                  
-                                   <div class="dropdown action-dropdown"  id="showafter" >
-                                    <div class="dropdown-toggle drplist"  data-toggle="dropdown"><i class="fa fa-caret-square-o-down" aria-hidden="true" style="font-size:14px;"></i></div>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">HTML</a></li>
-                                      <li><a href="#">CSS</a></li>
-                                      <li><a href="#">JavaScript</a></li>
-                                    </ul>
-                                  </div>
+                                   <div class="dropdown action-dropdown"  id="showafter" style="">
+                                    <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-caret-square-o-down" aria-hidden="true" style="font-size:14px; "></i></button>
+                                                                            
+                                        <ul class="dropdown-menu multicheckselect">
+                                          <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/> &nbsp;Employee ID</a></li>
+                                          <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/> &nbsp;First Name</a></li>
+                                          <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/> &nbsp;Last Name</a></li>
+                                          <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/> &nbsp;Email ID</a></li>
+                                          <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/> &nbsp;Department</a></li>
+                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Date Of Joining </a></li>
+                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Photo </a></li>
+                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Address </a></li>
+                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Status </a></li>
+                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Employee Type </a></li>
+                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp; Marital Status </a></li>
+                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Employee Role </a></li>
+                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Job Description </a></li>
+                                        </ul>
+                                      </div>
 
                                     
                                 </th>
@@ -246,11 +305,14 @@
                                 <td></td>
                                 <td id="actinlist">
                                   <div class="dropdown action-dropdown"  id="showafter" >
-                                    <div class="dropdown-toggle drplist"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                                    <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
                                     <ul class="dropdown-menu">
-                                      <li><a href="#">HTML</a></li>
-                                      <li><a href="#">CSS</a></li>
-                                      <li><a href="#">JavaScript</a></li>
+                                      <li><a href="#">View</a></li>
+                                      <li><a href="#">Edit </a></li>
+                                      <li><a href="#">Delete</a></li>
+                                      <li><a href="#">History</a></li>
+                                      <li><a href="#">Add Task</a></li>
+                                      <li><a href="#">Merge Mail Templete</a></li>
                                     </ul>
                                   </div>
                                 </td>
@@ -284,11 +346,14 @@
                                 <td></td>
                                 <td id="actinlist">
                                   <div class="dropdown action-dropdown"  id="showafter" >
-                                    <div class="dropdown-toggle drplist"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                                    <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
                                     <ul class="dropdown-menu">
-                                      <li><a href="#">HTML</a></li>
-                                      <li><a href="#">CSS</a></li>
-                                      <li><a href="#">JavaScript</a></li>
+                                       <li><a href="#">View</a></li>
+                                      <li><a href="#">Edit </a></li>
+                                      <li><a href="#">Delete</a></li>
+                                      <li><a href="#">History</a></li>
+                                      <li><a href="#">Add Task</a></li>
+                                      <li><a href="#">Merge Mail Templete</a></li>
                                     </ul>
                                   </div>
                                 </td>
@@ -322,11 +387,14 @@
                                 <td></td>
                                 <td id="actinlist">
                                   <div class="dropdown action-dropdown"  id="showafter" >
-                                    <div class="dropdown-toggle drplist"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                                    <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
                                     <ul class="dropdown-menu">
-                                      <li><a href="#">HTML</a></li>
-                                      <li><a href="#">CSS</a></li>
-                                      <li><a href="#">JavaScript</a></li>
+                                      <li><a href="#">View</a></li>
+                                      <li><a href="#">Edit </a></li>
+                                      <li><a href="#">Delete</a></li>
+                                      <li><a href="#">History</a></li>
+                                      <li><a href="#">Add Task</a></li>
+                                      <li><a href="#">Merge Mail Templete</a></li>
                                     </ul>
                                   </div>
                                 </td>
@@ -372,25 +440,27 @@
         </div>
   
       </div>
-    <div class="footer-content" >
-      <div class="row" style="margin: 0;">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-
-          </div>
-          <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
-              
-            <div class="col-lg-3 col-sm-2"> </div>
-            <div class="col-lg-2 col-md-4 col-sm-3 col-xs-12"> 
-              <select class="form-control" style="margin: 20px 0;">
-                <option>PPR</option>
-                <option>10</option> 
-                <option>100</option> 
-                <option>1000</option> 
-                
-              </select>
+      <div class="box-footer footer-content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              Total Records is 20
             </div>
-            <div class="col-lg-7 col-md-4 col-sm-7 col-xs-12"> 
-               <ul class="pagination hidden-xs pull-right">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
+              <div class="col-sm-6 pull-right">
+                 <div class="form-group fixwdth" >
+              
+                  <select class="form-control" class="">
+                    <option>PPR</option>
+                    <option>10</option> 
+                    <option>100</option> 
+                    <option>1000</option> 
+                  </select>
+                </div>
+              </div>
+               
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 pull-right">
+              <ul class="pagination hidden-xs ">
                 <li><a href="#"><<</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
@@ -400,10 +470,38 @@
                 <li><a href="#">>></a></li>
               </ul>
             </div>
-          </div>
-        
         </div>
-      </div>
+        </div>
+     <!--  <div class="footer-content" >
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+             
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3" style="text-align: right; line-height: 50px;">
+                <div class="form-group">
+              
+                  <select class="form-control">
+                    <option>PPR</option>
+                    <option>10</option> 
+                    <option>100</option> 
+                    <option>1000</option> 
+                  </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 pull-right">
+              <ul class="pagination hidden-xs ">
+                <li><a href="#"><<</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">>></a></li>
+              </ul>
+            </div>
+        </div>
+     
+      </div> -->
     </section>
  
   </div>
@@ -447,6 +545,7 @@
           </div>
         </div>
         <div class="modal-footer">
+
           <button type="button" id="" class="btn btn-success btn-sm pull-left"><i class="fa fa-check"></i> Submit </button>
           <button type="button" class="btn btn-danger btn-sm pull-left" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
         </div>
