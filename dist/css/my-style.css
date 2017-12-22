@@ -294,12 +294,12 @@ padding-left: 20px;
   padding: 0 20px 10px 0 !important
 }
 .boxbbodyarea {
-  min-height: 73vh !important;
+  min-height: 74.5vh !important;
   overflow-x: auto;
 }
  .footer-content {
     height: 58px;
-    line-height: 51px;
+    /*line-height: 51px;*/
     text-align: center;
   }
 .footer-content .pagination {
