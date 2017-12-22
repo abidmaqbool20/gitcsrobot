@@ -159,11 +159,11 @@ var options = [];
                     </button>
                    
                     <ul class="dropdown-menu pull-right" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
+                      <li><a href="#"> <i class="fa fa-arrow-down" aria-hidden="true"></i> Import</a></li>
+                      <li><a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i> Export</a></li>
+                      <li><a href="#"> <i class="fa fa-history" aria-hidden="true"></i> History Export</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i> Bulk File Upload</a></li>
                     </ul>
                   </div>
 
