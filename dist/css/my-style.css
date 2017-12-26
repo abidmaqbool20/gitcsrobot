@@ -255,9 +255,12 @@ padding: 12px 15px;
   
 }
 .action_header_info .select2-selection {
-  width: 230px !important;
-  height: 28px !important;
+  /*width: 230px !important;*/
+  height: 30px !important;
   padding: 2px 12px !important
+}
+.action_header_info input[type="text"]{
+  height: 30px !important;
 }
 .action_header_info .form-group{
   margin-bottom: 12px !important;
@@ -334,6 +337,31 @@ padding-left: 20px;
    color: #3c8dbc;
  
    }
+
+
+/*-------------Widget User For attendence module setting start here ---------------*/
+.attendence_set {
+  padding: 10px 10px 0 25px;
+}
+.attendence_set  .widget-user-header{
+    padding: 5px !important;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.attendence_set .widget-user-2 .widget-user-username{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px !important;
+    font-weight: 400;
+
+}
+.attendence_set .widget-user-2 .widget-user-image>img {
+
+    width: 50px !important;
+    height: auto;
+    float: left;
+    padding-bottom: 3px;
+}
 /*-- Media Queries start Here  -- */
 
 @media only screen and (min-device-width: 1024px) 
