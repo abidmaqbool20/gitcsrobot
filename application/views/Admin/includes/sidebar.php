@@ -26,8 +26,8 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
          
-        <li>
-          <a href="index.php">
+        <li onclick="load_view(this,'dashboard')">
+          <a href="javascript:;">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
@@ -35,35 +35,72 @@
             </span>
           </a>
         </li>
-        <li class="treeview active">
-          <a href="#">
+        <li class="treeview" >
+          <a href="javascript:;">
             <i class="fa fa-building-o"></i> <span>Organization</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="company-info.php"><i class="fa fa-circle-o"></i> Company Profile</a></li>
-            <li><a href="departments.php"><i class="fa fa-circle-o"></i> Departments</a></li>
-            <li><a href="designations.php"><i class="fa fa-circle-o"></i> Designations</a></li>
-            <li><a href="locations.php"><i class="fa fa-circle-o"></i> Locations</a></li>
+            <li onclick="load_view(this,'company_profile')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Company Profile
+              </a>
+            </li>
+            <li onclick="load_view(this,'departments')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Departments
+              </a>
+            </li>
+            <li onclick="load_view(this,'designations')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Designations
+              </a>
+            </li>
+            <li onclick="load_view(this,'locations')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Locations
+              </a>
+            </li>
             
-            <li><a href="#"><i class="fa fa-circle-o"></i> Employees</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Organogram</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Groups</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Company Policy</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Holiday Calendar</a></li>
+            <li onclick="load_view(this,'employees')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Employees
+              </a>
+            </li>
+            <li onclick="load_view(this,'organogram')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Organogram
+              </a>
+            </li>
+            <li onclick="load_view(this,'groups')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Groups
+              </a>
+            </li>
+            <li onclick="load_view(this,'company-policies')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Company Policy
+              </a>
+            </li>
+            <li onclick="load_view(this,'holiday-calander')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Holiday Calendar
+              </a>
+            </li>
+            
           </ul>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="javascript:;">
             <i class="fa fa-calendar"></i> <span>Attendence</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Views </a></li>
+            <li class=""><a href="javascript:;"><i class="fa fa-circle-o"></i> Views </a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Reports</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Shift Schedule</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Settings</a></li>

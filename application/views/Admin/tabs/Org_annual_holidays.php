@@ -70,5 +70,4 @@
       </form>
   </div>
 </div>
-           
-          
+<script  src="<?php echo ASSETSPATH; ?>/js/plugin_init.js" > </script>          

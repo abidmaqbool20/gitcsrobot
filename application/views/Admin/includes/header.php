@@ -50,7 +50,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
   <script  src="https://code.jquery.com/jquery-2.2.4.min.js" > </script>
-    <script  src="<?php echo ASSETSPATH; ?>dist/js/theme.js" > </script>
+
+  <script  src="<?php echo ASSETSPATH; ?>/js/actions.js" > </script>
   
 
   
