@@ -4,10 +4,12 @@
       
   <div class="h45">
     <ul class="nav nav-pills">
-      <li class="active"><a data-toggle="tab" href="#1">Home</a></li>
-      <li><a data-toggle="tab" href="#2">Birthday Folks</a></li>
-      <li><a data-toggle="tab" href="#3">Trainees</a></li>
-      <li><a data-toggle="tab" href="#3">Favourites</a></li>
+      <li class="active"><a data-toggle="tab" href="#1">Basic Info</a></li>
+      <li><a data-toggle="tab" href="#2">Bank Info</a></li>
+      <li><a data-toggle="tab" href="#3">Annual Holidays</a></li>
+      <li><a data-toggle="tab" href="#4">General Settings</a></li>
+      <li><a data-toggle="tab" href="#5">Company Administrator</a></li>
+
 
     </ul>
   </div>
@@ -85,256 +87,119 @@
             </div>
         </div>
     </section>
-    <section class="content paddingnone responsive" >
+    <section class="content paddingnone responsive ">
 
      
       <div class="box paddingnone">
         
         <div class="box-body boxbbodyarea"  style="padding: 0 !important;">
           <div class="tab-content tab-content-filter">
-            <div class="tab-pane active" id="1" style="padding: 0 !important;">
-              
-              <div class="row">
-                   <table class="table table-hover table-stripend table-bordered resulttable">
-                            <thead>
-                         
-                         
-                            <tr>
-                                <th></th>
-                                <th>  
-                                 
-                                   <div class="dropdown action-dropdown"  id="showafter" style="">
-                                    <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-caret-square-o-down" aria-hidden="true" style="font-size:14px; "></i></button>
-                                                                            
-                                        <ul class="dropdown-menu multicheckselect">
-                                          <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/> &nbsp;Employee ID</a></li>
-                                          <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/> &nbsp;First Name</a></li>
-                                          <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/> &nbsp;Last Name</a></li>
-                                          <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/> &nbsp;Email ID</a></li>
-                                          <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/> &nbsp;Department</a></li>
-                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Date Of Joining </a></li>
-                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Photo </a></li>
-                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Address </a></li>
-                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Status </a></li>
-                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Employee Type </a></li>
-                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp; Marital Status </a></li>
-                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Employee Role </a></li>
-                                          <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/> &nbsp;Job Description </a></li>
-                                        </ul>
-                                      </div>
-
-                                    
-                                </th>
-                               
-                                <th><input type="checkbox" name="" id="selectallcheck"></th>
-                                <th>Sr #</th>
-                                <th>Photo</th>
-                                <th>Employee ID</th>
-                                <th>Firs Name</th>
-                                <th>Last Name</th>
-                                <th>Email ID</th>
-                                <th>Department</th>
-                                <th>Title</th>
-                                <th>Date of Joining </th>
-                                <th>Report To</th>
-                                <th>Mobile Phone</th>
-                                <th>Address</th>
-                                <th>Employee Status </th>
-                                <th>Employee type </th>
-                                <th>Marital Status </th>
-                                <th>About Me </th>
-                                <th>Mobile Phone</th>
-                                <th>Address</th>
-                                <th>Employee Status </th>
-                                <th>Employee type </th>
-                                <th>Marital Status </th>
-                                <th>About Me </th>
-
-
-                              </tr>
-                              <tr id="filter-panel" class="collapse filter-panel"  style="background-color: #eeefff;">
-                              <th colspan="2"><button type="button" class="close" aria-label="Close"><span aria-hidden="true" id="dismiss_filter" style="font-size: 34px;">×</span></button></th>
-                              
-                                <th colspan="3">
-                                  <div class="btn-group open">
-                                    <button type="button" class="btn btn-warning btn-flat">Action</button>
-                                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                      <span class="caret"></span>
-                                      <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                      <li><a href="#">Action</a></li>
-                                      <li><a href="#">Another action</a></li>
-                                      <li><a href="#">Something else here</a></li>
-                                      <li class="divider"></li>
-                                      <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                  </div>
-
-                                </th>
-                               
-
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                               <th><input type="text" class="form-control" name=""></th>
-                              </tr>
-
-
-
-
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td></td>
-                                <td id="actinlist">
-                                  <div class="dropdown action-dropdown"  id="showafter" >
-                                    <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">View</a></li>
-                                      <li><a href="#">Edit </a></li>
-                                      <li><a href="#">Delete</a></li>
-                                      <li><a href="#">History</a></li>
-                                      <li><a href="#">Add Task</a></li>
-                                      <li><a href="#">Merge Mail Templete</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                                <td><input type="checkbox" name="checkboxes[]" id="table_record_1" class="table_record_checkbox" value=""></td>
-                                <td> 1 </td>
-                                 <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
-                                <td> 92016Noman </td>
-
-                                
-                                <td>Muhammad Noman</td>
-                                <td> Naseer Ahmad</td>
-                                <td> noman@gmail.com</td>
-                                <td>IT </td>
-                                <td>Database Adminstrator</td>
-                                <td> 9 September 2016 </td>
-                                <td> Murtaza </td>
-                                <td>03136410009 </td>
-                                <td> Active </td>
-                                <td> Contract </td>
-                                <td> Sahiwal </td>
-                                <td> Single </td>
-                                <td> Murtaza </td>
-                                <td>03136410009 </td>
-                                <td> Active </td>
-                                <td> Contract </td>
-                                <td> Sahiwal </td>
-                                <td> Single </td>
-                                <td> No Important </td>
-                              </tr>
-                              <tr>
-                                <td></td>
-                                <td id="actinlist">
-                                  <div class="dropdown action-dropdown"  id="showafter" >
-                                    <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
-                                    <ul class="dropdown-menu">
-                                       <li><a href="#">View</a></li>
-                                      <li><a href="#">Edit </a></li>
-                                      <li><a href="#">Delete</a></li>
-                                      <li><a href="#">History</a></li>
-                                      <li><a href="#">Add Task</a></li>
-                                      <li><a href="#">Merge Mail Templete</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                                <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
-                                <td> 1 </td>
-                                 <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
-                                <td> 92016Noman </td>
-
-                                
-                                <td>Muhammad Noman</td>
-                                <td> Naseer Ahmad</td>
-                                <td> noman@gmail.com</td>
-                                <td>IT </td>
-                                <td>Database Adminstrator</td>
-                                <td> 9 September 2016 </td>
-                                <td> Murtaza </td>
-                                <td>03136410009 </td>
-                                <td> Active </td>
-                                <td> Contract </td>
-                                <td> Sahiwal </td>
-                                <td> Single </td>
-                                <td> Murtaza </td>
-                                <td>03136410009 </td>
-                                <td> Active </td>
-                                <td> Contract </td>
-                                <td> Sahiwal </td>
-                                <td> Single </td>
-                                <td> No Important </td>
-                              </tr>
-                              <tr>
-                                <td></td>
-                                <td id="actinlist">
-                                  <div class="dropdown action-dropdown"  id="showafter" >
-                                    <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">View</a></li>
-                                      <li><a href="#">Edit </a></li>
-                                      <li><a href="#">Delete</a></li>
-                                      <li><a href="#">History</a></li>
-                                      <li><a href="#">Add Task</a></li>
-                                      <li><a href="#">Merge Mail Templete</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                                <td><input type="checkbox" name="checkboxes[]" id="table_record_3" class="table_record_checkbox" value=""></td>
-                                <td> 1 </td>
-                                 <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
-                                <td> 92016Noman </td>
-
-                                
-                                <td>Muhammad Noman</td>
-                                <td> Naseer Ahmad</td>
-                                <td> noman@gmail.com</td>
-                                <td>IT </td>
-                                <td>Database Adminstrator</td>
-                                <td> 9 September 2016 </td>
-                                <td> Murtaza </td>
-                                <td>03136410009 </td>
-                                <td> Active </td>
-                                <td> Contract </td>
-                                <td> Sahiwal </td>
-                                <td> Single </td>
-                                <td> Murtaza </td>
-                                <td>03136410009 </td>
-                                <td> Active </td>
-                                <td> Contract </td>
-                                <td> Sahiwal </td>
-                                <td> Single </td>
-                                <td> No Important </td>
-                              </tr>
-          
-
-                            </tbody>
-                   </table>
+            <div class="tab-pane active" id="1" style="padding: 0 !important;"> 
+              <div class="row" style="padding: 20px;">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <div class="box" style="background-color: #ecf0f5;">
+                    <form role="form">
+                      <div class="box-body">
+                        <div class="company-logo">
+                          <img src="http://consol.pk/images/services/consollogo.jpg" class="img-responsive">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="box box-primary" style="background-color: #ecf0f5;">
+                    <div class="box-header with-border"><h3 class="box-title">Other Info</h3></div>
+                      <form role="form">
+                        <div class="box-body">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Company Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Company Name">
+                          </div>
+                           <div class="form-group">
+                            <label for="exampleInputEmail1">Website</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Company Website">
+                          </div>
+                           <div class="form-group">
+                            <label for="exampleInputEmail1">Contact Person</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Contact Number</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Number">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Contact Email</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                          </div>
+                        </div>
+                       
+                          <div class="box-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                      </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                  <div class="box box-primary" style="background-color: #ecf0f5;">
+                    <div class="box-header with-border"><h3 class="box-title">Company Address Information</h3></div>
+                    <form role="form">
+                      <div class="box-body">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Address Line 1</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Company Name">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Address Line 2</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Company Website">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Country</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="exampleInputEmail1">City</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">State / Province</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Zip Code</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Number">
+                          </div>
+                        </div>
+                        <div class="box-header with-border"><h3 class="box-title">Company Registration Details</h3></div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Company NTN Number</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Number">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="tab-pane" id="2">
-              <h3>Notice the gap between the content and tab after applying a background color</h3>
+              <?php $this->load->view('Admin/Org_Bank_Info'); ?>
             </div>
             <div class="tab-pane" id="3">
-              <h3>add clearfix to tab-content (see the css)</h3>
+              <?php $this->load->view('Admin/Org_Annual_Holidays'); ?>
+            </div>
+            <div class="tab-pane" id="4">
+              <?php  $this->load->view('Admin/Org_General_Settings'); ?>
             </div>
           </div>
         </div>

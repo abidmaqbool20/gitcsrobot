@@ -13,6 +13,6 @@ class Admin extends MY_Controller {
 	public function index()
 	{
 	
-		$this->load->view('Admin/functional');
+		$this->load->view('Admin/Org_Company_Profile');
 	}
 }
