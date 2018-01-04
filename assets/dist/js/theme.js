@@ -58,4 +58,10 @@ var options = [];
    return false;
 });
 
+
+//Date picker
+    $('.datepicker').datepicker({
+      autoclose: true
+    })
+
  

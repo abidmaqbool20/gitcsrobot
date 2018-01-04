@@ -100,7 +100,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="javascript:;"><i class="fa fa-circle-o"></i> Views </a></li>
+            <li onclick="load_view(this,'attendence')"><a href="javascript:;"><i class="fa fa-circle-o"></i> Views </a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Reports</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Shift Schedule</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Settings</a></li>

@@ -119,7 +119,9 @@
 
       }
     })
-
+ $('.timepicker').timepicker({
+      showInputs: false
+    })
     /* ADDING EVENTS */
     var currColor = '#3c8dbc' //Red by default
     //Color chooser button
@@ -193,7 +195,7 @@
     )
 
     //Date picker
-    $('#datepicker').datepicker({
+    $('.datepicker').datepicker({
       autoclose: true
     })
 

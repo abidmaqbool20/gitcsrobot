@@ -97,6 +97,38 @@
 {
 	height: auto !important;
 }
+
+ .panelwidth {
+   
+    margin-left: 10px;
+  }
+.panelcancel {
+  background: transparent !important;
+    border: none !important;
+    font-size: 28px !important;
+    margin-top: -12px !important;
+     margin-right: -15px;
+     padding: 0 12px 0 12px !important;
+
+}
+.panelcancel:hover {
+  background: red !important;
+  border: 1px !important;
+     padding: 0 13px 3px 13px !important;
+  
+  color: #fff !important;
+
+} 
+
+ .buttonssett {
+          position: absolute;
+          bottom: 10px;
+        }
+
+   .form-margin {
+    margin-left: 25px !important;
+  }
+      
 /*Add Departments Modal Start Here */
   
 .modal.right .modal-dialog {

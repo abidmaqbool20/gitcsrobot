@@ -25,21 +25,18 @@
               </div>
                <div class="form-group">
                 <label for="exampleInputEmail1">Contact Person</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Contact Person Name">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Contact Number</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Number">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Contact Person Number">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Contact Email</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Contact Person Email">
               </div>
             </div>
-           
-              <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
+            <div class="box-footer"><button type="submit" class="btn btn-primary">Submit</button></div>
           </form>
         </div>
     </div>
@@ -48,50 +45,52 @@
         <div class="box-header with-border"><h3 class="box-title">Company Address Information</h3></div>
         <form role="form">
           <div class="box-body">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Address Line 1</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Company Name">
-              </div>
-            </div>
-            <div class="col-md-12">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Address Line 2</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Company Website">
+                  <label for="exampleInputEmail1">Address Line 1</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Address Line # 1">
                 </div>
-            </div>
-            <div class="col-md-6">
+              </div>
+              <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Address Line 2</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Address Line # 2">
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Country</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Country">
+                  </div>
+              </div>
+              <div class="col-md-6">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Country</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                    <label for="exampleInputEmail1">City</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="City">
                 </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                  <label for="exampleInputEmail1">City</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="exampleInputEmail1">State / Province</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">State / Province</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="State">
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Zip Code</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Number">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Zip Code</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Zip Code">
+                </div>
               </div>
-            </div>
-            <div class="box-header with-border"><h3 class="box-title">Company Registration Details</h3></div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Company NTN Number</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Number">
+              <div class="box-header with-border"><h3 class="box-title">Company Registration Details</h3></div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Company NTN Number</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="National Tax Number">
+                </div>
               </div>
-            </div>
-          </div>
+            </div> 
+            <div class="box-footer"><button type="submit" class="btn btn-primary">Submit</button></div>
+            
         </form>
       </div>
     </div>

@@ -137,6 +137,8 @@
             </div>
           </div> 
         </div>
+            <div class="box-footer"><button type="submit" class="btn btn-primary">Submit</button></div>
+        
       </form>
   </div>
 </div>
