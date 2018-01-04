@@ -46,14 +46,15 @@
    
   <link rel="stylesheet" href="<?php echo ASSETSPATH; ?>dist/css/skins/_all-skins.min.css">
   <link rel="stylesheet" href="<?php echo ASSETSPATH; ?>dist/css/my-style.css">
- 
+  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-
+  <script src="https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
   <script  src="https://code.jquery.com/jquery-2.2.4.min.js" > </script>
 
   <script  src="<?php echo ASSETSPATH; ?>/js/actions.js" > </script>
   
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.3.1/sweetalert2.all.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.3.1/sweetalert2.css" />
   
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
