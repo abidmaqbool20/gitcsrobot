@@ -13,17 +13,12 @@
 <section class="content paddingnone responsive ">
   <div class="row" style="padding: 20px;">
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <div class="box" style="background-color: #ecf0f5;">
-        <form role="form">
-          <div class="box-body">
-            <div class="company-logo">
-              <img src="http://consol.pk/images/services/consollogo.jpg" class="img-responsive">
-            </div>
-          </div>
-        </form>
-      </div>
+       
       <div class="box box-primary" style="background-color: #ecf0f5;">
         <div class="box-header with-border"><h3 class="box-title">Other Info</h3></div>
+          <div class="company-logo">
+            <img src="http://consol.pk/images/services/consollogo.jpg" class="img-responsive" style="margin: 30px auto;">
+          </div>
           <form method="post" id="Contact_Info_Form" onsubmit="return save_Record(this)" action="<?php echo base_url('admin/save_Record'); ?>" >
             <input type="hidden" id="Edit_Recorde" name="Edit_Recorde" value="<?php if(isset($org_Data['Id'])){ echo $org_Data['Id'];} ?>"  >
             <input type="hidden" id="Table_Name" name="Table_Name" value="organization"  >

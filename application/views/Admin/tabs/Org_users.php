@@ -80,6 +80,7 @@
           <div class="tab-pane active" id="1" style="padding: 0 !important;">
             
             <div class="row">
+               
                  <table class="table table-hover table-stripend table-bordered resulttable">
                           <thead>
                        
@@ -138,7 +139,13 @@
 
                             </tr>
                             <tr id="filter-panel" class="collapse filter-panel"  style="background-color: #eeefff;">
-                            <th colspan="2"><button type="button" class="close" aria-label="Close"><span aria-hidden="true" id="dismiss_filter" style="font-size: 34px;">×</span></button></th>
+                            <th colspan="2" class="close_table_filter">
+                               <button class="close" style="background-color: transparent; border:0px; ">
+                                 <span aria-hidden="true" id="dismiss_filter" style="font-size: 34px;">×</span>
+                               </button>
+                                
+                              
+                            </th>
                             
                               <th colspan="3">
                                 <div class="btn-group open">
@@ -274,6 +281,540 @@
                                 <div class="dropdown action-dropdown"  id="showafter" >
                                   <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
                                   <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
+                                     <li><a href="#">View</a></li>
+                                    <li><a href="#">Edit </a></li>
+                                    <li><a href="#">Delete</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Add Task</a></li>
+                                    <li><a href="#">Merge Mail Templete</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td><input type="checkbox" name="checkboxes[]" id="table_record_2" class="table_record_checkbox" value=""></td>
+                              <td> 1 </td>
+                               <td> <img src="<?php echo ASSETSPATH; ?>/images/user.png" width="32" height="32" > </td>
+                              <td> 92016Noman </td>
+
+                              
+                              <td>Muhammad Noman</td>
+                              <td> Naseer Ahmad</td>
+                              <td> noman@gmail.com</td>
+                              <td>IT </td>
+                              <td>Database Adminstrator</td>
+                              <td> 9 September 2016 </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> Murtaza </td>
+                              <td>03136410009 </td>
+                              <td> Active </td>
+                              <td> Contract </td>
+                              <td> Sahiwal </td>
+                              <td> Single </td>
+                              <td> No Important </td>
+                            </tr>
+
+                            <tr>
+                              <td></td>
+                              <td id="actinlist">
+                                <div class="dropdown action-dropdown"  id="showafter" >
+                                  <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                  <ul class="dropdown-menu">
                                     <li><a href="#">View</a></li>
                                     <li><a href="#">Edit </a></li>
                                     <li><a href="#">Delete</a></li>
@@ -313,6 +854,7 @@
 
                           </tbody>
                  </table>
+              
             </div>
           </div>
            

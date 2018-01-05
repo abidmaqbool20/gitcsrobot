@@ -61,9 +61,10 @@
               <input type="text" class="form-control" id="BankAddress" name="BankAddress" placeholder="Bank Address" value="<?php if(isset($org_Data['BankAddress'])){ echo $org_Data['BankAddress'];} ?>">
             </div>
           </div>
-          <div class="col-md-12">
-              <button type="submit" class="btn btn-primary pull-right">Submit</button>
-          </div>
+           
+        </div>
+        <div class="box-footer">
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
     </div>

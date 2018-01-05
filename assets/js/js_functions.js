@@ -45,35 +45,45 @@ function save_Record($this)
 			    	 		//$($this).trigger("reset");
 			    	 	}
 			    	 	
-			    	 	swal(
-						      'Successful!',
-						       $message['Message'],
-						      'success'
-						 );
+			    	 	if($("#progress-modal").modal("hide"))
+			    	 	{
+			    	 		swal(
+							      'Successful!',
+							       $message['Message'],
+							      'success'
+								);
+			    	 	}
+			    	 	
 
 			    	    
 			    	 }
 			    	 else
 			    	 {
-			    	 	swal(
-						      'Error!',
-						       $message['Message'],
-						      'error'
-						    );
+			    	 	if($("#progress-modal").modal("hide"))
+			    	 	{
+				    	 	swal(
+							      'Error!',
+							       $message['Message'],
+							      'error'
+							    );
+				    	}
 			    	 }
 			    	 
 			    },
 			    error:function(msg){
-			    	 
-			    	 swal(
-						      'Error!',
-						       msg,
-						      'error'
-						 );
+
+			    	 	if($("#progress-modal").modal("hide"))
+			    	 	{
+					    	 swal(
+								      'Error!',
+								       msg,
+								      'error'
+								 );
+					    }
 			    },
 			    complete:function(){
 			    	
-			    	 $("#progress-modal").modal("hide"); 
+			    	 // $("#progress-modal").modal("hide"); 
 			    	 $("#request-progress").find("span").html("");
 			    	 $("#request-progress .request-progress").css("width","0%");
 			    	 $("#request-progress").hide();
