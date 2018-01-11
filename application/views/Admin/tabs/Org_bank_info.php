@@ -71,3 +71,4 @@
   </div>
 </section>
 <script  src="<?php echo ASSETSPATH; ?>/js/plugin_init.js" > </script>
+<script  src="<?php echo ASSETSPATH; ?>/js/js_functions.js" > </script>

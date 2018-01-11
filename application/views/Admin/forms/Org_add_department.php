@@ -67,4 +67,5 @@
           <button type="button" class="btn btn-danger btn-sm pull-left" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
         </div>
       </div> 
- <script  src="<?php echo ASSETSPATH; ?>/js/plugin_init.js" > </script>
+<script  src="<?php echo ASSETSPATH; ?>/js/plugin_init.js" > </script>
+<script  src="<?php echo ASSETSPATH; ?>/js/js_functions.js" > </script>

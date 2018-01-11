@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-
-<!-- Mirrored from adminlte.io/themes/AdminLTE/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Dec 2017 15:08:01 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+  <!-- Bootstrap 3.3.7 -->
+ 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
-  <!-- Tell the browser to be responsive to screen width -->
+  <title>CONSOL | Dashboard</title>
+  
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
+
 
   <link rel="stylesheet" href="<?php echo ASSETSPATH; ?>bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->

@@ -101,7 +101,7 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?php echo ASSETSPATH; ?>dist/js/pages/dashboard.js"></script>
  
-<script  src="<?php echo ASSETSPATH; ?>/js/js_functions.js" > </script>
+
 </body>
 
  

@@ -35,6 +35,7 @@ function save_Record($this)
 		        },
 			    
 			    success:function(msg){
+			    	 
 			    	 $message = $.parseJSON(msg);
 			    	 
 			    	 if($message['Success'])
@@ -42,7 +43,7 @@ function save_Record($this)
 			    	 	if($("#Edit_Recorde").val() != $message['Id'])
 			    	 	{
 			    	 		$("#Edit_Recorde").val($message['Id']);
-			    	 		//$($this).trigger("reset");
+			    	 		 
 			    	 	}
 			    	 	
 			    	 	if($("#progress-modal").modal("hide"))
@@ -93,3 +94,18 @@ function save_Record($this)
 
 	return false;
 }
+
+ 
+ 
+$(".all-days").click(function(e){
+ 	if($(this).is(":checked"))
+	{
+		$(this).prop("checked",true);
+	  	$(this).closest("tr").find("input[type='checkbox']").prop("checked",true);
+	}
+	else
+	{ 
+		$(this).prop("checked",false);
+		$(this).closest("tr").find("input[type='checkbox']").prop("checked",false);
+	}
+});
