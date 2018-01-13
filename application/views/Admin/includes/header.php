@@ -23,8 +23,11 @@
   <link rel="stylesheet" href="<?php echo ASSETSPATH; ?>bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
 
   <link rel="stylesheet" href="<?php echo ASSETSPATH; ?>dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="<?php echo ASSETSPATH; ?>dist/css/jquery.fancybox.css">
+  
   <!-- Morris chart -->
   <link rel="stylesheet" href="<?php echo ASSETSPATH; ?>bower_components/morris.js/morris.css">
+
   <!-- jvectormap -->
   <link rel="stylesheet" href="<?php echo ASSETSPATH; ?>bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Date Picker -->

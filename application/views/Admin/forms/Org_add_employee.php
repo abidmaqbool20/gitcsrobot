@@ -168,7 +168,11 @@ if($('#EduExper').click()){
                             
                           </div> 
                           </div>
+<<<<<<< HEAD
                           <div class="col-md-12"><div class="box-header with-border"><h3 class="box-title">Employment Information</h3></div></div>
+=======
+                          <div class="with-border"><h3 class="box-title" style="padding-left: 10px">Basic Info</h3></div>
+>>>>>>> 67213409a714ab6ec750746bc2fddbf586cc1216
                           <div class="col-md-12">
                             <div class="box-body">
                               <div class="row">
@@ -271,7 +275,8 @@ if($('#EduExper').click()){
                                       <th >Description: </th>
                                       <td colspan="3" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad Bala bala sjkdasgdhj a bala jsdgshjhsgshad Bala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
                                     </tr>
-                                    <tr class="showme" ="" class="pull-right">
+
+                                    <tr class="showme">
                                       <td  colspan="2">
                                         <a class="btn btn-link" href=""> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
                                         <a href="" class="btn btn-link"> <i class="fa fa-trash-o" aria-hidden="true"></i></a> 
@@ -343,8 +348,8 @@ if($('#EduExper').click()){
                                       <th >Description: </th>
                                       <td colspan="3" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad Bala bala sjkdasgdhj a bala jsdgshjhsgshad Bala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
                                     </tr>
-                                    <tr class="showme" ="" class="pull-right">
-                                      <td  colspan="2">
+                                    <tr class="showme" class="pull-right">
+                                      <td >
                                         <a class="btn btn-link" href=""> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
                                         <a href="" class="btn btn-link"> <i class="fa fa-trash-o" aria-hidden="true"></i></a> 
                                       </td>
@@ -359,6 +364,17 @@ if($('#EduExper').click()){
                       </div>
 
                     </div>
+<style type="text/css">
+  .nopadding 
+    {
+      padding: 0px !important;
+    }
+  .panelcustpadd 
+    {
+      padding: 10px 10px !important;
+    }
+
+</style>
                     <div role="tabpanel " class="tab-pane" id="EmpAssets">
                       <div class="panel-group form-margin ">
                         <div class="panel panelset">
@@ -372,12 +388,11 @@ if($('#EduExper').click()){
                           </div>
                           <div id="EmpAss" class="panel-collapse collapse">
                             <div class="box-body" style="">
-                              <div class="col-md-12">
-                                <form class="form-horizontal">
-                                  <div class="box-body">
+                              <div class="col-md-12 nopadding">
+                                <form class="form-horizontal nopadding">
                                     <div class="row">
                                       <div class="col-sm-12">
-                                        <div class="col-sm-4 col-xs-12">
+                                        <div class="col-sm-4 col-xs-12 nopadding">
                                           <input type="text" class="form-control" placeholder="Assets Name">
                                         </div>
                                         <div class="col-sm-4 col-xs-12 ">
@@ -391,12 +406,11 @@ if($('#EduExper').click()){
                                     </div>
                                     <br>
                                     <div class="row">
-                                      <div class="col-sm-12">
+                                      <div class="col-sm-12 nopadding">
                                          <div class="col-sm-12 col-xs-12">
                                             <textarea class="form-control" rows="2" placeholder="Additional Information...."></textarea>
                                           </div>
                                         </div>
-                                       
                                     </div>
                                     <div class="row">
                                       <div class="col-sm-12">
@@ -404,16 +418,15 @@ if($('#EduExper').click()){
                                           <br>
                                           <a href="" class="with-border btn btn-info"> <i class="fa fa-plus" aria-hidden="true"></i> Save </a> 
                                         </div>
-                                      </div> </div>
-                                    
-                                  </div>
+                                      </div> 
+                                    </div>
                                   <hr> 
                                 </form>
                                 <div class="col-sm-6">
                                   <div class="box">    
                                         <!-- /.box-header -->
                                         <div class="box-body table-responsive no-padding">
-                                          <table class="table " style=" table-layout: fixed; width: 100%;">
+                                          <table class="table " style=" table-layout: fixe width: 100%;">
                                             <tbody class="normaldiv">
                                             <tr>
                                               <th colspan="2">Assets Name:</th>
@@ -431,11 +444,14 @@ if($('#EduExper').click()){
                                             </tr>
                                            <tr>
                                               <th >Description: </th>
-                                              <td colspan="2" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
+                                              <td colspan="3" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
                                            </tr>
                                           
-                                            <tr class="showme" ="" class="pull-right">
-                                              
+                                           <tr class="showme" class="pull-right">
+                                              <td >
+                                                <a class="btn btn-link" href=""> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
+                                                <a href="" class="btn btn-link"> <i class="fa fa-trash-o" aria-hidden="true"></i></a> 
+                                              </td>
                                             </tr>
                                           </tbody></table>
                                         </div>
@@ -460,12 +476,11 @@ if($('#EduExper').click()){
                           </div>
                           <div id="EmpBenifits" class="panel-collapse collapse">
                             <div class="box-body" style="">
-                              <div class="col-md-12">
-                                <form class="form-horizontal">
-                                  <div class="box-body">
+                              <div class="col-md-12 nopadding">
+                                <form class="form-horizontal nopadding">
                                     <div class="row">
                                       <div class="col-sm-12">
-                                        <div class="col-sm-6 col-xs-12">
+                                        <div class="col-sm-6 col-xs-12 nopadding">
                                           <input type="text" class="form-control" placeholder="Benifit Name">
                                         </div>
                                         <div class="col-sm-6 col-xs-12 ">
@@ -476,7 +491,7 @@ if($('#EduExper').click()){
                                     </div>
                                     <br>
                                     <div class="row">
-                                      <div class="col-sm-12">
+                                      <div class="col-sm-12 nopadding">
                                          <div class="col-sm-12 col-xs-12">
                                             <textarea class="form-control" rows="2" placeholder="Additional Information...."></textarea>
                                           </div>
@@ -489,9 +504,10 @@ if($('#EduExper').click()){
                                           <br>
                                           <a href="" class=" with-border btn btn-info"> <i class="fa fa-plus" aria-hidden="true"></i> Save </a> 
                                         </div>
-                                      </div> </div>
+                                      </div> 
+                                    </div>
                                     
-                                  </div>
+                                
                                   <hr> 
                                 </form>
                                 <div class="col-sm-6">
@@ -516,12 +532,14 @@ if($('#EduExper').click()){
                                             </tr>
                                            <tr>
                                               <th >Description: </th>
-                                              <td colspan="2" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
+                                              <td colspan="3" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
                                            </tr>
-                                          
-                                            <tr class="showme" ="" class="pull-right">
-                                              
-                                            </tr>
+                                          <tr class="showme" class="pull-right">
+                                            <td >
+                                              <a class="btn btn-link" href=""> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
+                                              <a href="" class="btn btn-link"> <i class="fa fa-trash-o" aria-hidden="true"></i></a> 
+                                            </td>
+                                          </tr>
                                           </tbody></table>
                                         </div>
                                        
@@ -541,43 +559,58 @@ if($('#EduExper').click()){
 
                     <div role="tabpanel" class="tab-pane" id="EmpDocumentS">
                       <div class="col-sm-12">
+                        <div class="col-sm-12">
+                          <form class="form-horizontal">
+                            <div class="form-group">
+                              <div class="col-sm-6 col-xs-6">  <input type="file" id="exampleInputFile"> </div>
+                              <div class="col-sm-6 col-xs-6  ">
+                                <a href="" class="pull-right with-border btn btn-info"> <i class="fa fa-plus" aria-hidden="true"></i> Save </a> 
+                              </div>
+
+                            </div>
+                          </form>
+                            <hr>
+                        </div>
+                      
                         <div class="itemab">
+
                           <ul>
                           
                             <li class="col-sm-3">
                               <figure>
-                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock" width="304" height="228">
+                                <img  src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock"  >
+                                <figcaption>Fig.1 - A view of the .</figcaption>
+                                <div class="lightbox-target" id="goofy">
+                                   <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg="/>
+                                   <a class="lightbox-close" href="#"></a>
+                                </div>
+                                <button class="btn btn-danger delfile"> <i class="fa fa-times" aria-hidden="true"></i></button>
+                              </figure>
+                            </li>
+                            <li class="col-sm-3">
+                              <figure class="fancybox">
+                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock"  >
                                 <figcaption>Fig.1 - A view of the .</figcaption>
                                 <button class="btn btn-danger delfile"> <i class="fa fa-times" aria-hidden="true"></i></button>
                               </figure>
                             </li>
                             <li class="col-sm-3">
-                              <figure>
-                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock" width="304" height="228">
+                              <figure class="fancybox">
+                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock"  >
                                 <figcaption>Fig.1 - A view of the .</figcaption>
                                 <button class="btn btn-danger delfile"> <i class="fa fa-times" aria-hidden="true"></i></button>
                               </figure>
                             </li>
                             <li class="col-sm-3">
-                              <figure>
-                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock" width="304" height="228">
+                              <figure class="fancybox">
+                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock"  >
                                 <figcaption>Fig.1 - A view of the .</figcaption>
                                 <button class="btn btn-danger delfile"> <i class="fa fa-times" aria-hidden="true"></i></button>
                               </figure>
                             </li>
-                            <li class="col-sm-3">
-                              <figure>
-                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock" width="304" height="228">
-                                <figcaption>Fig.1 - A view of the .</figcaption>
-                                <button class="btn btn-danger delfile"> <i class="fa fa-times" aria-hidden="true"></i></button>
-                              </figure>
-                            </li>
-                            
-                            
-                            
                           </ul>
-                          
                         </div>
+                       
                       </div>
                     </div>
                   </div>

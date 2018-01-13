@@ -48,6 +48,8 @@
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
 <script src="<?php echo ASSETSPATH; ?>bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<?php echo ASSETSPATH; ?>assets/dist/js/jquery.fancybox.js"></script>
+
 
  
 
