@@ -168,11 +168,11 @@ if($('#EduExper').click()){
                             
                           </div> 
                           </div>
-<<<<<<< HEAD
+ 
                           <div class="col-md-12"><div class="box-header with-border"><h3 class="box-title">Employment Information</h3></div></div>
-=======
-                          <div class="with-border"><h3 class="box-title" style="padding-left: 10px">Basic Info</h3></div>
->>>>>>> 67213409a714ab6ec750746bc2fddbf586cc1216
+ 
+                        
+ 
                           <div class="col-md-12">
                             <div class="box-body">
                               <div class="row">
