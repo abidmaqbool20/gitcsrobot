@@ -271,11 +271,22 @@ padding: 12px 15px;
   margin-bottom: 0 !important;
 }
 .showme {
+  position: absolute;
   display: none;
  }
-   .normaldiv:hover .showme{
-display: block;
+ .showme .btn-link{
+  padding: 2px;
+}
+.normaldiv:hover .showme{
+  display: block;
+  top: 0;
+  right: 0;
+
    }
+
+
+
+
 .resulttable tr>th
 {
     background: #3c8dbc;
