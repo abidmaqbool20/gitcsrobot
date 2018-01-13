@@ -8,15 +8,21 @@
     $('.panel-group').on('hidden.bs.collapse', toggleIcon);
     $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
+$("#EmpAssets").click(){
+  if()
+  alert('jajsaa');
+}
+
+
+if($('#EduExper').click()){
+    
+        alert('Print the Form EmpDocumentS!');
+
+        //Continue Form action.
+    };
 
 </script>
-<style type="text/css">
-  .panel-title-font  {
-       font-size: 27px;
-    font-weight: bold;
-    margin-top: -6px;
-  }
-</style>
+
 <div class="modal-content">
         <div class="modal-header modal-header-size">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -33,6 +39,8 @@
                       <li role="presentation"><a href="#EduExper" aria-controls="EduExper" role="tab" data-toggle="tab">Education</a></li>
                       <li role="presentation"><a href="#WorkExper" aria-controls="WorkExper" role="tab" data-toggle="tab">Experience</a></li>
                       <li role="presentation"><a href="#EmpAssets" aria-controls="EmpAssets" role="tab" data-toggle="tab">Related Info</a></li>
+                      <li role="presentation"><a href="#EmpDocumentS" aria-controls="EmpDocumentS" role="tab" data-toggle="tab">Documents </a></li>
+
 
                   </ul>
                   <!-- Tab panes -->
@@ -41,7 +49,7 @@
                       
                       <div class="box-header with-border"><h3 class="box-title">Personal Information</h3></div>
                       <form class="form-horizontal">
-                        <div class="col-md-12"> 
+                          <div class="col-md-12"> 
                           <div class="box-body">
                             <div class="col-md-12">
                               
@@ -160,8 +168,8 @@
                               </div>
                             </div> 
                           </div> 
-                        </div>
-                          <div class="box-header with-border"><h3 class="box-title">Basic Info</h3></div>
+                          </div>
+                          <div class=" with-border"><h3 class="box-title">Basic Info</h3></div>
                           <div class="col-md-12">
                             <div class="box-body">
                               <div class="row">
@@ -208,202 +216,228 @@
                     </div>
                     <div role="tabpanel" class="tab-pane" id="EduExper">
                       <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-sm-7"><div class="box-header with-border"><h3 class="box-title">Education </h3></div> </div>
-                          <div class="col-sm-5"><a href="" class="pull-right box-header with-border"> <i class="fa fa-plus" aria-hidden="true"></i> Add New </a> </div>
-                        </div>
-                        <div class="panel panel-info panelwidth">
-                          <div class="panel-heading">First Education <button class="panelcancel pull-right"> X </button> </div>
-                          <div class="panel-body">
-                            <form class="form-horizontal">
-                                <div class="box-body">
-                                  <div class="row">
-                                    <div class="col-sm-6 col-xs-12 form-margin">
-                                      <div class="form-group">
-                                        <label> School Name </label>
-                                        <input type="text" class="form-control" placeholder="Previous Company Name">
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-5 col-xs-12 form-margin">
-                                      <div class="form-group">
-                                        <label>Degree Title:</label>
-                                        <input type="text" class="form-control" placeholder="First Name">
-                                      </div>
-                                    </div>
-                                  </div>  
-                                  <div class="row">
-                                    <div class="col-sm-6 col-xs-12 form-margin">
-                                      <div class="form-group">
-                                        <label>Field of Study: </label>
-                                        <input type="text" placeholder="From Date" class="form-control">
-                                       
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-5 col-xs-12 form-margin">
-                                      <div class="form-group">
-                                        <label> Date of completion: </label>
-                                        <input type="text" placeholder="To Date" class="datepicker form-control" >
-                                       
-                                      </div>
-                                    </div>
-                                  </div>  
-                                  <div class="row">
-                                    <div class="col-xs-12">
-                                    <div class="col-xs-12">
-                                    <div class="col-xs-12">
-                                      <div class="form-group">
-                                        <label>Additional Notes </label>
-                                          <textarea class="form-control" rows="4" placeholder="Job Description...."></textarea>
-                                      </div>
-                                      </div></div>
-                                    </div>
-                                  </div>  
+                        <form class="form-horizontal">
+                          <div class="box-body">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="col-sm-3 col-xs-12">
+                                  <input type="text" class="form-control" placeholder="School / College / University Name">
                                 </div>
-                            </form>
+                                <div class="col-sm-3 col-xs-12 ">
+                                  <input type="text" class="form-control" placeholder="Degree Title">
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                  <input type="text" placeholder="Filed Of Study" class="form-control">
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                  <input type="text" placeholder="Date Completion" class="datepicker form-control" >
+                                </div>
+                              </div>  
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                              <textarea class="form-control" rows="3" placeholder="Additional Information...."></textarea>
+                            </div>
+                            <div class="col-sm-12">
+                              <br>
+                              <a href="" class="pull-right with-border btn btn-info"> <i class="fa fa-plus" aria-hidden="true"></i> Save </a> 
+                            </div>
                           </div>
-                        </div>
+                          <hr> 
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="box">    
+                                <!-- /.box-header -->
+                                <div class="box-body table-responsive no-padding">
+                                  <table class="table " style=" table-layout: fixed; width: 100%;">
+                                    <tbody class="normaldiv"><tr>
+                                      <th>School Name:</th>
+                                      <td> GCUF Sahiwal. </td>
+                                      <th>Degree:</th>
+                                      <td>Computer Science</td>
+                                    </tr>
+                                   
+                                    <tr>
+                                      <th>Completion Date:</th>
+                                      <td>11-7-2014</td>
+                                      <th>Specialized:</th>
+                                      <td>Bob Doe</td>
+                                    </tr>
+                                   
+                                    <tr>
+                                      <th >Description: </th>
+                                      <td colspan="3" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad Bala bala sjkdasgdhj a bala jsdgshjhsgshad Bala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
+                                    </tr>
+                                    <tr class="showme" ="" class="pull-right">
+                                      <td  colspan="2">
+                                        <a class="btn btn-link" href=""> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
+                                        <a href="" class="btn btn-link"> <i class="fa fa-trash-o" aria-hidden="true"></i></a> 
+                                      </td>
+                                    </tr>
+                                  </tbody></table>
+                                </div>
+                                <!-- /.box-body -->
+                              </div>
+                              <!-- /.box -->
+                            </div>
+                          </div>
+                        </form>
                       </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="WorkExper">
                       <div class="col-md-12">
+                        <form class="form-horizontal">
+                          <div class="box-body">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="col-sm-3 col-xs-12">
+                                  <input type="text" class="form-control" placeholder="Company Name">
+                                </div>
+                                <div class="col-sm-3 col-xs-12 ">
+                                  <input type="text" class="form-control" placeholder="Designation">
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                  <input type="text" placeholder="Joining Date" class="datepicker form-control">
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                  <input type="text" placeholder="Leaving Date" class="datepicker form-control" >
+                                </div>
+                              </div>  
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                              <textarea class="form-control" rows="3" placeholder="Leaving Reason...."></textarea>
+                            </div>
+                            <div class="col-sm-12">
+                              <br>
+                              <a href="" class="pull-right with-border btn btn-info"> <i class="fa fa-plus" aria-hidden="true"></i> Save </a> 
+                            </div>
+                          </div>
+                          <hr> 
+                          
+                        </form>
                         <div class="row">
-                          <div class="col-sm-7"><div class="box-header with-border"><h3 class="box-title">Experience </h3></div> </div>
-                          <div class="col-sm-5"><a href="" class="pull-right box-header with-border"> <i class="fa fa-plus" aria-hidden="true"></i> Add New </a> </div>
-                        </div>
-                        <div class="panel panel-info panelwidth">
-                        <div class="panel-heading">First Experience <button class="panelcancel pull-right"> X </button> </div>
-                        <div class="panel-body">
-                          <form class="form-horizontal">
-                              <div class="box-body">
-                                <div class="row">
-                                  <div class="col-sm-6 col-xs-12 form-margin">
-                                    <div class="form-group">
-                                      <label>Previous Compan Name </label>
-                                      <input type="text" class="form-control" placeholder="Previous Company Name">
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-5 col-xs-12 form-margin">
-                                    <div class="form-group">
-                                      <label>Job Title:</label>
-                                      <input type="text" class="form-control" placeholder="First Name">
-                                    </div>
-                                  </div>
-                                </div>  
-                                <div class="row">
-                                  <div class="col-sm-6 col-xs-12 form-margin">
-                                    <div class="form-group">
-                                      <label>From Date: </label>
-                                      <input type="text" placeholder="From Date" class="datepicker form-control">
-                                     
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-5 col-xs-12 form-margin">
-                                    <div class="form-group">
-                                      <label>To Date: </label>
-                                      <input type="text" placeholder="To Date" class="datepicker form-control" >
-                                     
-                                    </div>
-                                  </div>
-                                </div>  
-                                <div class="row">
-                                  <div class="col-xs-12">
-                                  <div class="col-xs-12">
-                                  <div class="col-xs-12">
-                                    <div class="form-group">
-                                      <label>Job Description </label>
-                                        <textarea class="form-control" rows="4" placeholder="Job Description...."></textarea>
-                                      
-                                    </div></div></div>
-                                  </div>
-                                </div>  
+                            <div class="col-xs-12">
+                              <div class="box">    
+                                <!-- /.box-header -->
+                                <div class="box-body table-responsive no-padding">
+                                  <table class="table " style=" table-layout: fixed; width: 100%;">
+                                    <tbody class="normaldiv"><tr>
+                                      <th>Company Name:</th>
+                                      <td> XYZ Co. </td>
+                                      <th>Job Title:</th>
+                                      <td> ABC S</td>
+                                    </tr>
+                                   
+                                    <tr>
+                                      <th> Joining Date:</th>
+                                      <td>11-7-2014</td>
+                                      <th> Leaving Date</th>
+                                      <td>11-7-2014</td>
+                                    </tr>
+                                   
+                                    <tr>
+                                      <th >Description: </th>
+                                      <td colspan="3" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad Bala bala sjkdasgdhj a bala jsdgshjhsgshad Bala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshadBala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
+                                    </tr>
+                                    <tr class="showme" ="" class="pull-right">
+                                      <td  colspan="2">
+                                        <a class="btn btn-link" href=""> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
+                                        <a href="" class="btn btn-link"> <i class="fa fa-trash-o" aria-hidden="true"></i></a> 
+                                      </td>
+                                    </tr>
+                                  </tbody></table>
+                                </div>
+                                <!-- /.box-body -->
                               </div>
-                          </form>
-
-                        </div>
-                        </div>
+                              <!-- /.box -->
+                            </div>
+                          </div>
                       </div>
+
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="EmpAssets">
-                      <div class="panel-group form-margin">
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
+                    <div role="tabpanel " class="tab-pane" id="EmpAssets">
+                      <div class="panel-group form-margin ">
+                        <div class="panel panelset">
+                          <div class="panel-heading" data-toggle="collapse" href="#EmpAss">
                             <h4 class="panel-title ">
-                              Assets
-                              <a data-toggle="collapse" href="#EmpAss" class="pull-right panel-title-font"> <i class="more-less glyphicon-plus" aria-hidden="true"></i> </a>
+                            <button class="btn btn-info btn-sm m-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-pencil"></i></button>
+                                Assets
+                              <a class="pull-right panel-title-font"> <i class="more-less glyphicon-plus" aria-hidden="true"></i> </a>
                             </h4>
                           </div>
                           <div id="EmpAss" class="panel-collapse collapse">
                             <div class="box-body" style="">
                               <div class="col-md-12">
-                                <div class="row">
-                                  <div class="col-sm-7"><div class="box-header with-border"><h3 class="box-title">Employee Assets </h3></div> </div>
-                                  <div class="col-sm-5"><a href="" class="pull-right box-header with-border"> <i class="fa fa-plus" aria-hidden="true"></i> Add New </a> </div>
-                                </div>
-                                <div class="panel panel-info panelwidth">
-                                  <div class="panel-heading">First Asset <button class="panelcancel pull-right"> X </button> </div>
-                                  <div class="panel-body">
-                                    <form class="form-horizontal">
-                                        <div class="box-body">
-                                          <div class="row">
-                                            <div class="col-sm-6 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>EmployeeID: </label>
-                                                 <select class="form-control select2" style="width: 100%;">
-                                                    <option selected="selected">Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                  </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Asset Type:</label>
-                                                <select class="form-control select2" style="width: 100%;">
-                                                    <option selected="selected">Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                  </select>
-                                              </div>
-                                            </div>
-                                          </div>  
-                                          <div class="row">
-                                            <div class="col-sm-6 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Given Date: </label>
-                                                <input type="text" placeholder="From Date" class="datepicker form-control">
-                                               
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Return Date: </label>
-                                                <input type="text" placeholder="To Date" class="datepicker form-control" >
-                                               
-                                              </div>
-                                            </div>
-                                          </div>  
-                                          <div class="row">
-                                            <div class="col-xs-12">
-                                            <div class="col-xs-12">
-                                            <div class="col-xs-12">
-                                              <div class="form-group">
-                                                <label>Asset Details </label>
-                                                  <textarea class="form-control" rows="4" placeholder="Job Description...."></textarea>
-                                                
-                                              </div></div></div>
-                                            </div>
-                                          </div>  
+                                <form class="form-horizontal">
+                                  <div class="box-body">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div class="col-sm-4 col-xs-12">
+                                          <input type="text" class="form-control" placeholder="Assets Name">
                                         </div>
-                                    </form>
+                                        <div class="col-sm-4 col-xs-12 ">
+                                          <input type="text" class="form-control datepicker" placeholder="Start Date">
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12 ">
+                                          <input type="text" class="form-control datepicker" placeholder="End Date">
+                                        </div>
+                                       
+                                      </div>  
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                         <div class="col-sm-12 col-xs-12">
+                                            <textarea class="form-control" rows="2" placeholder="Additional Information...."></textarea>
+                                          </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div class="pull-right ">
+                                          <br>
+                                          <a href="" class="with-border btn btn-info"> <i class="fa fa-plus" aria-hidden="true"></i> Save </a> 
+                                        </div>
+                                      </div> </div>
+                                    
                                   </div>
+                                  <hr> 
+                                </form>
+                                <div class="col-sm-6">
+                                  <div class="box">    
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                          <table class="table " style=" table-layout: fixed; width: 100%;">
+                                            <tbody class="normaldiv">
+                                            <tr>
+                                              <th colspan="2">Assets Name:</th>
+                                              <td colspan="2"> XYZ Co. </td>
+                                              
+                                             
+                                            </tr>
+                                           
+                                            <tr>
+                                             <th>Start Date:</th>
+                                              <td> 11-7-2014</td>
+                                              <th> End Date:</th>
+                                              <td>11-7-2014</td>
+                                             
+                                            </tr>
+                                           <tr>
+                                              <th >Description: </th>
+                                              <td colspan="2" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
+                                           </tr>
+                                          
+                                            <tr class="showme" ="" class="pull-right">
+                                              
+                                            </tr>
+                                          </tbody></table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                      </div>
                                 </div>
                               </div>
                             </div>
@@ -411,279 +445,135 @@
                         </div>
                       </div>
                       <div class="panel-group form-margin">
-                        <div class="panel panel-default">
+                        <div class="panel panelset">
                           <div class="panel-heading">
-                            <h4 class="panel-title">
+                            <h4 data-toggle="collapse" href="#EmpBenifits"  class="panel-title">
+                            <button class="btn btn-info btn-sm m-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-pencil"></i></button>
                               Benifits
-                              <a data-toggle="collapse" href="#EmpBenifits" class="pull-right panel-title-font"> <i class="more-less glyphicon-plus" aria-hidden="true"></i> </a>
+                              <a class="pull-right panel-title-font"> <i class="more-less glyphicon-plus" aria-hidden="true"></i> </a>
 
                             </h4>
                           </div>
                           <div id="EmpBenifits" class="panel-collapse collapse">
                             <div class="box-body" style="">
                               <div class="col-md-12">
-                                <div class="row">
-                                  <div class="col-sm-7"><div class="box-header with-border"><h3 class="box-title">Benifits </h3></div> </div>
-                                  <div class="col-sm-5"><a href="" class="pull-right box-header with-border"> <i class="fa fa-plus" aria-hidden="true"></i> Add New </a> </div>
-                                </div>
-                                <div class="panel panel-info panelwidth">
-                                  <div class="panel-heading">First Benifit <button class="panelcancel pull-right"> X </button> </div>
-                                  <div class="panel-body">
-                                    <form class="form-horizontal">
-                                        <div class="box-body">
-                                          <div class="row">
-                                            <div class="col-sm-6 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                  <label>EmployeeID </label>
-                                                 <select class="form-control select2" style="width: 100%;">
-                                                    <option selected="selected">Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                  </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Lunch:</label>
-                                                <input type="text" class="form-control" placeholder="Lunch">
-                                              </div>
-                                            </div>
-                                          </div>  
-                                          <div class="row">
-                                            <div class="col-sm-6 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Education Allowance: </label>
-                                                <input type="text" placeholder="Education Allowance" class="form-control">
-                                               
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>House Allowance: </label>
-                                                <input type="text" placeholder="House Allowance" class="form-control" >
-                                               
-                                              </div>
-                                            </div>
-                                          </div>  
-                                          <div class="row">
-                                            <div class="col-xs-12">
-                                            <div class="col-xs-12">
-                                            <div class="col-xs-12">
-                                              <div class="form-group">
-                                                <label>Other Allowance Detail:</label>
-                                                  <textarea class="form-control" rows="4" placeholder="Job Description...."></textarea>
-                                                
-                                              </div></div></div>
-                                            </div>
-                                          </div>  
+                                <form class="form-horizontal">
+                                  <div class="box-body">
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <div class="col-sm-6 col-xs-12">
+                                          <input type="text" class="form-control" placeholder="Benifit Name">
                                         </div>
-                                    </form>
+                                        <div class="col-sm-6 col-xs-12 ">
+                                          <input type="text" class="form-control datepicker" placeholder="Start Date">
+                                        </div>
+                                       
+                                      </div>  
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                         <div class="col-sm-12 col-xs-12">
+                                            <textarea class="form-control" rows="2" placeholder="Additional Information...."></textarea>
+                                          </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                     <div class="pull-right">
+                                          <br>
+                                          <a href="" class=" with-border btn btn-info"> <i class="fa fa-plus" aria-hidden="true"></i> Save </a> 
+                                        </div>
+                                      </div> </div>
+                                    
                                   </div>
+                                  <hr> 
+                                </form>
+                                <div class="col-sm-6">
+                                  <div class="box">    
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                          <table class="table " style=" table-layout: fixed; width: 100%;">
+                                            <tbody class="normaldiv">
+                                            <tr>
+                                              <th colspan="2">Benifits Name:</th>
+                                              <td colspan="2"> XYZ Co. </td>
+                                              
+                                             
+                                            </tr>
+                                           
+                                            <tr>
+                                             <th>Start Date:</th>
+                                              <td> 11-7-2014</td>
+                                              <th> End Date:</th>
+                                              <td>11-7-2014</td>
+                                             
+                                            </tr>
+                                           <tr>
+                                              <th >Description: </th>
+                                              <td colspan="2" style=" white-space: normal;"> Bala bala sjkdasgdhj a bala jsdgshjhsgshad</td>
+                                           </tr>
+                                          
+                                            <tr class="showme" ="" class="pull-right">
+                                              
+                                            </tr>
+                                          </tbody></table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                      </div>
                                 </div>
+
+
+                                
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="panel-group form-margin">
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              Company Policy
-                                <a data-toggle="collapse" href="#CompPolicy" class="pull-right panel-title-font"> <i class="more-less glyphicon-plus" aria-hidden="true"></i> </a>
-                            </h4>
-                          </div>
-                          <div id="CompPolicy" class="panel-collapse collapse">
-                            <div class="box-body" style="">
-                              <div class="col-md-12">
-                                <div class="row">
-                                  <div class="col-sm-7"><div class="box-header with-border"><h3 class="box-title">Policy Details </h3></div> </div>
-                                  <div class="col-sm-5"><a href="" class="pull-right box-header with-border"> <i class="fa fa-plus" aria-hidden="true"></i> Add New </a> </div>
-                                </div>
-                                <div class="panel panel-info panelwidth">
-                                  <div class="panel-heading">First Policy <button class="panelcancel pull-right"> X </button> </div>
-                                  <div class="panel-body">
-                                    <form class="form-horizontal">
-                                        <div class="box-body">
-                                          <div class="row">
-                                            <div class="col-sm-6 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Title:<span style="color:#f00;"> * </span>  </label>
-                                                <input type="text" class="form-control" placeholder="Previous Company Name">
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Last Reviosion:</label>
-                                                <input type="text" class="form-control datepicker" placeholder="Last Reviosion">
-                                              </div>
-                                            </div>
-                                          </div>  
-                                          <div class="row">
-                                            <div class="col-sm-6 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Details: </label>
-                                                <textarea class="form-control" rows="4" placeholder="Job Description...."></textarea>
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Status: </label>
-                                                 <select class="form-control select2" style="width: 100%;">
-                                                    <option selected="selected">Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                  </select>
-                                                  <label>Polcy Document: </label>
-                                                  <input type="file" id="exampleInputFile">
-                                               
-                                              </div>
-                                            </div>
-                                          </div>  
-                                          <div class="row">
-                                            <div class="col-xs-12">
-                                            <div class="col-xs-12">
-                                            <div class="col-sm-6">
-                                              <div class="form-group">
-                                                <label>Applied To</label>
-                                                <input type="text" class="form-control datepicker" placeholder="Last Reviosion">
-                                              </div></div>
-                                               <div class="col-sm-5 col-xs-12 form-margin">
-                                                <div class="form-group">
-                                                  <label>Drafted By: </label>
-                                                 <select class="form-control select2" style="width: 100%;">
-                                                    <option selected="selected">Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                  </select>
-                                                 
-                                              </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                          </div>  
-                                        </div>
-                                    </form>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel-group form-margin">
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              Training
-                                <a data-toggle="collapse" href="#EmpTraining" class="pull-right panel-title-font"> <i class="more-less glyphicon-plus" aria-hidden="true"></i> </a>
-                            </h4>
-                          </div>
-                          <div id="EmpTraining" class="panel-collapse collapse">
-                            <div class="box-body" style="">
-                              <div class="col-md-12">
-                                <div class="row">
-                                  <div class="col-sm-7"><div class="box-header with-border"><h3 class="box-title">Training Dteails </h3></div> </div>
-                                  <div class="col-sm-5"><a href="" class="pull-right box-header with-border"> <i class="fa fa-plus" aria-hidden="true"></i> Add New </a> </div>
-                                </div>
-                                <div class="panel panel-info panelwidth">
-                                  <div class="panel-heading">First Training <button class="panelcancel pull-right"> X </button> </div>
-                                  <div class="panel-body">
-                                    <form class="form-horizontal">
-                                        <div class="box-body">
-                                          <div class="row">
-                                            <div class="col-sm-6 col-xs-12 form-margin">
-                                              <div class="form-group" id="generalhiring">
-                                                <label>Select Session Badge OR Enter Badge: </label> <button id="buttoncust" style="display: none;"> Custom Badge </button>
-                                                <select class="form-control select2" multiple="multiple" data-placeholder="Select a Session" style="width: 100%;">
-                                                  <option>January</option>
-                                                  <option></option>
-                                                  <option>California</option>
-                                                  <option>Delaware</option>
-                                                  <option>Tennessee</option>
-                                                  <option>Texas</option>
-                                                  <option>Washington</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Select Trainers:<span style="color:#f00;"> * </span>  </label>
-                                                <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"style="width: 100%;">
-                                                  <option>Alabama</option>
-                                                  <option>Alaska</option>
-                                                  <option>California</option>
-                                                  <option>Delaware</option>
-                                                  <option>Tennessee</option>
-                                                  <option>Texas</option>
-                                                  <option>Washington</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                          </div>  
-                                          <div class="row">
-                                           <div class="col-sm-6 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Start Training Session:</label>
-                                                <input type="text" class="form-control datepicker" placeholder="December To January">
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>End Training Session:</label>
-                                                <input type="text" class="form-control datepicker" placeholder="December To January">
-                                              </div>
-                                            </div>
-                                           
-                                          </div>  
-                                          <div class="row">
-                                             <div class="col-sm-6 col-xs-12 form-margin">
-                                              <div class="form-group">
-                                                <label>Start Time Training: </label>
-                                                <input type="text" class="form-control timepicker">
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-12 form-margin">
-                                                <div class="form-group  ">
-                                                  <label>End Time Training: </label>
-                                                  <input type="text" class="form-control timepicker" placeholder="End time of training">
-                                                </div>
-                                            </div>
-                                           
-                                          </div> 
-                                           <div class="col-sm-6 col-xs-12 form-margin">
-                                                <div class="form-group">
-                                                  <label>Trainees: </label>
-                                                  <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"style="width: 100%;">
-                                                    <option>Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                  </select>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    </form>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                    
+                    </div>
+
+
+                    <div role="tabpanel" class="tab-pane" id="EmpDocumentS">
+                      <div class="col-sm-12">
+                        <div class="itemab">
+                          <ul>
+                          
+                            <li class="col-sm-3">
+                              <figure>
+                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock" width="304" height="228">
+                                <figcaption>Fig.1 - A view of the .</figcaption>
+                                <button class="btn btn-danger delfile"> <i class="fa fa-times" aria-hidden="true"></i></button>
+                              </figure>
+                            </li>
+                            <li class="col-sm-3">
+                              <figure>
+                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock" width="304" height="228">
+                                <figcaption>Fig.1 - A view of the .</figcaption>
+                                <button class="btn btn-danger delfile"> <i class="fa fa-times" aria-hidden="true"></i></button>
+                              </figure>
+                            </li>
+                            <li class="col-sm-3">
+                              <figure>
+                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock" width="304" height="228">
+                                <figcaption>Fig.1 - A view of the .</figcaption>
+                                <button class="btn btn-danger delfile"> <i class="fa fa-times" aria-hidden="true"></i></button>
+                              </figure>
+                            </li>
+                            <li class="col-sm-3">
+                              <figure>
+                                <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="The Pulpit Rock" width="304" height="228">
+                                <figcaption>Fig.1 - A view of the .</figcaption>
+                                <button class="btn btn-danger delfile"> <i class="fa fa-times" aria-hidden="true"></i></button>
+                              </figure>
+                            </li>
+                            
+                            
+                            
+                          </ul>
+                          
                         </div>
                       </div>
                     </div>
