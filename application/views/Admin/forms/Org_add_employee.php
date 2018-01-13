@@ -47,13 +47,12 @@ if($('#EduExper').click()){
                   <div class="tab-content" style="  max-height: calc(100vh - 210px); overflow-y: auto;">
                     <div role="tabpanel" class="tab-pane active" id="BasicInfo" style="width:99%; ">
                       
-                      <div class="box-header with-border"><h3 class="box-title">Personal Information</h3></div>
+                      <div class="col-md-12"><div class="box-header with-border"><h3 class="box-title">Personal Information</h3></div></div>
                       <form class="form-horizontal">
                           <div class="col-md-12"> 
                           <div class="box-body">
-                            <div class="col-md-12">
-                              
-                                <div class="row">
+                             
+                              <div class="row">
                                 <div class="col-sm-6 col-xs-12 form-margin">
                                   <div class="form-group">
                                     <label>EmployeeID <span style="color: #f00;"> * </span></label>
@@ -166,10 +165,10 @@ if($('#EduExper').click()){
                                     </div>
                                   </div>
                               </div>
-                            </div> 
+                            
                           </div> 
                           </div>
-                          <div class=" with-border"><h3 class="box-title">Basic Info</h3></div>
+                          <div class="col-md-12"><div class="box-header with-border"><h3 class="box-title">Employment Information</h3></div></div>
                           <div class="col-md-12">
                             <div class="box-body">
                               <div class="row">
@@ -211,6 +210,10 @@ if($('#EduExper').click()){
                               </div> 
                               
                             </div>  
+                          </div>
+                          <div class="col-md-12 buttonssett form-margin">
+                            <button type="button" id="" class="btn btn-success btn-sm pull-left"><i class="fa fa-check"></i> Submit </button>
+                            <button type="button" class="btn btn-danger btn-sm pull-left" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
                           </div>
                       </form>
                     </div>
@@ -521,7 +524,7 @@ if($('#EduExper').click()){
                                             </tr>
                                           </tbody></table>
                                         </div>
-                                        <!-- /.box-body -->
+                                       
                                       </div>
                                 </div>
 
@@ -578,17 +581,13 @@ if($('#EduExper').click()){
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <div class="row buttonssett form-margin">
-          <button type="button" id="" class="btn btn-success btn-sm pull-left"><i class="fa fa-check"></i> Submit </button>
-          <button type="button" class="btn btn-danger btn-sm pull-left" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
-          </div>
-        </div>
+        
       </div> 
    
  <script  src="<?php echo ASSETSPATH; ?>/js/plugin_init.js" > </script>
