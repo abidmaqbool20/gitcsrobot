@@ -168,11 +168,10 @@ if($('#EduExper').click()){
                             
                           </div> 
                           </div>
-<<<<<<< HEAD
+
                           <div class="col-md-12"><div class="box-header with-border"><h3 class="box-title">Employment Information</h3></div></div>
-=======
+
                           <div class="with-border"><h3 class="box-title" style="padding-left: 10px">Basic Info</h3></div>
->>>>>>> 67213409a714ab6ec750746bc2fddbf586cc1216
                           <div class="col-md-12">
                             <div class="box-body">
                               <div class="row">
@@ -227,7 +226,7 @@ if($('#EduExper').click()){
                           <div class="box-body">
                             <div class="row">
                               <div class="col-md-12">
-                                <div class="col-sm-3 col-xs-12">
+                                <div class="col-sm-3 col-xs-12 nopadding">
                                   <input type="text" class="form-control" placeholder="School / College / University Name">
                                 </div>
                                 <div class="col-sm-3 col-xs-12 ">
@@ -242,16 +241,19 @@ if($('#EduExper').click()){
                               </div>  
                             </div>
                             <br>
-                            <div class="col-md-12">
+                            <div class="col-sm-12 nopadding">
                               <textarea class="form-control" rows="3" placeholder="Additional Information...."></textarea>
                             </div>
+                             
                             <div class="col-sm-12">
-                              <br>
+                             <br>
                               <a href="" class="pull-right with-border btn btn-info"> <i class="fa fa-plus" aria-hidden="true"></i> Save </a> 
                             </div>
-                          </div>
-                          <hr> 
-                          <div class="row">
+                        
+                         </div>
+                         <hr>
+                        </form>
+                         <div class="row">
                             <div class="col-xs-12">
                               <div class="box">    
                                 <!-- /.box-header -->
@@ -289,7 +291,6 @@ if($('#EduExper').click()){
                               <!-- /.box -->
                             </div>
                           </div>
-                        </form>
                       </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="WorkExper">

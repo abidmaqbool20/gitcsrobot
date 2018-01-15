@@ -265,25 +265,41 @@ padding: 12px 15px;
 
 
 }
+.normaldiv tr td {
+font-size: 11px;
+} 
 .paddingnone {
   border-top:0 !important;
   padding: 0 !important;
   margin-bottom: 0 !important;
 }
 .showme {
+ 
+  display: block;
+ transition: .5s ease;
+  opacity: 0;
   position: absolute;
-  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
  }
  .showme .btn-link{
   padding: 2px;
 }
-.normaldiv:hover .showme{
+/*.normaldiv:hover .showme{
+
   display: block;
   top: 0;
   right: 0;
 
-   }
+   }*/
+.normaldiv:hover {
+ opacity: 0.3;
 
+   }
 
 
 
