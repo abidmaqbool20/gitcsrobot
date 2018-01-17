@@ -64,3 +64,27 @@ function tab_loader($this,$file)
 	});
 	 
 }
+
+
+function form_tab_loader($this,$file,$id)
+{
+	$($this).parents("ul").find("li").removeClass("active");
+	$($this).addClass("active");
+
+	$url_location = window.location.href;
+	$url_location = $url_location.split("Admin");
+	$url = $url_location[0]+"Admin/form_tab_loader";
+  	
+  	$loader_path = $url_location[0]+"/assets/images/Load.gif";
+    $("#form_tab_loader_div").html('<div class="loader"><img src="'+$loader_path+'"></div>');
+  	 
+	$("#form_tab_loader_div").load( $url , { "file" : $file, "id" : $id }  , function( response, status, xhr ) {
+ 
+	  if(status == "error")
+	  {
+	  	$("#form_tab_loader_div").html("Error: " + xhr.status + ": " + xhr.status); 
+	  }
+                
+	});
+	 
+}

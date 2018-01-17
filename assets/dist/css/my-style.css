@@ -126,7 +126,7 @@
         }
 
    .form-margin {
-    margin-left: 10px !important;
+    margin-left: 5px !important;
   }
       
 /*Add Departments Modal Start Here */
@@ -146,9 +146,11 @@
 
   }
   
+
+
   .modal.right .modal-body {
     padding: 0 0px 0 0 !important;
-    min-height: 89% !important;
+    min-height: 98% !important;
   }
 
   .modal.right.fade .modal-dialog {
@@ -192,7 +194,7 @@
   #customizedash .nav-tabs > li.active > a::after,  .nav-tabs > li:hover > a::after { transform: scale(1); }
 
 .tab-pane { padding: 15px 0 !important; }
-.tab-content{padding:20px 0 }
+.tab-content{padding:20px 0  60px 0; }
 .divitem {
     width: 73%;
     height: 40px;
@@ -301,6 +303,12 @@ font-size: 11px;
 
    }
 
+
+.form-buttons
+{
+  padding: 15px 10px;
+  background-color: #fff;
+}
 
 
 .resulttable tr>th

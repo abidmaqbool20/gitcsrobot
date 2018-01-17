@@ -37,6 +37,16 @@ class Admin extends MY_Controller {
 		return $content;
 	}
 
+    public function form_tab_loader()
+    {
+        $id = $this->input->post("id");
+        $file = $this->input->post("file");
+
+        $data['id'] = $id;
+        $content = $this->load->view('Admin/forms/'.$file,$data);
+        return $content;
+    }
+
 	public function save_file($pathh,$name)
     {
 
@@ -68,12 +78,14 @@ class Admin extends MY_Controller {
      }
 
 
-    function save_multiple_files($path,$files=array())
+    function save_multiple_files($path,$files=array(),$table,$id)
     {
-        $file_names = array();
+            $filedata = array();
             if (!file_exists($path)) {  mkdir($path, 0777, true); }
             $filesCount = count($files);
-            for($i = 0; $i < $filesCount; $i++){
+            for($i = 0; $i < $filesCount; $i++)
+            {
+
                 $_FILES['userFile']['name'] = $files[$i]['name'];
                 $_FILES['userFile']['type'] = $files[$i]['type'];
                 $_FILES['userFile']['tmp_name'] = $files[$i]['tmp_name'];
@@ -90,13 +102,26 @@ class Admin extends MY_Controller {
                 $this->upload->initialize($config);
                 if($this->upload->do_upload('userFile')){
                     $fileData = $this->upload->data();
-                    $file_names[] = $fileData['file_name'];
+                    $filedata = array();
+                   
+                    $filedata['TableId']   =    $id;
+                    $filedata['TableName'] =    $table;
+                    $filedata["OriginalName"] = $_FILES['userFile']['name']; 
+                    $filedata['FileName'] =     $fileData['file_name'];
+                    $filedata['FileType'] =     $_FILES['userFile']['type'];
+                    $filedata['FileSize'] =     $_FILES['userFile']['size'];
+                    $filedata['DateAdded']=     $this->date;
+                    $filedata['AddedBy']  =     $this->user_data['Id'];
+                    $filedata['ModifiedBy'] =   $this->user_data['Id'];
+
+                    $this->db->insert("files",$filedata);
+                     
 
                 }
             }
 
 
-        return $file_names;
+        return true;
     }
 
     function reArrayFiles($file_post) 
@@ -133,6 +158,9 @@ class Admin extends MY_Controller {
 		$save = false; 
 		$message = array();
 
+        // echo "<pre>";
+        // print_r($_FILES);
+        // die();
 
 		$data = $this->input->post();
 		if($data['Edit_Recorde'] == "")
@@ -144,7 +172,49 @@ class Admin extends MY_Controller {
         	unset($data['Edit_Recorde'],$data['Table_Name']);
         	$data = $this->JsonEncode($data);
 
+
+
         	$this->db->insert($table,$data);
+            $id = $this->db->insert_id();
+
+            $filedata = array();
+            $path = "userassets/".$table."/".$id."/";
+            if(isset($_FILES) && sizeof($_FILES) > 0)
+            {
+                foreach ($_FILES as $key => $value) 
+                {
+                    if(is_array($_FILES[$key]['name']))
+                    {
+                        if($_FILES[$key]['error'][0] == 0)
+                        {
+                            $files =  $this->reArrayFiles($_FILES[$key]);
+                            $this->save_multiple_files($path,$files,$table,$id);
+                        }
+                    }
+                    else
+                    {
+                        if($_FILES[$key]['error'] == 0)
+                        {
+                            $filedata['TableId'] = $id;
+                            $filedata['TableName'] = $table;
+                            $filedata["OriginalName"] = $this->save_file($path,$key);
+                            $filedata['FileName'] = $_FILES[$key]['name'];
+                            $filedata['FileType'] = $_FILES[$key]['type'];
+                            $filedata['FileSize'] = $_FILES[$key]['size'];
+                            $filedata['DateAdded'] = $this->date;
+                            $filedata['AddedBy'] = $this->user_data['Id'];
+                            $filedata['ModifiedBy'] = $this->user_data['Id'];
+
+                            $this->db->insert("files",$filedata);
+                        }
+                    }
+
+                }
+
+                
+            }
+
+
         	$save = true;
         }
         else
@@ -156,6 +226,45 @@ class Admin extends MY_Controller {
         	unset($data['Edit_Recorde'],$data['Table_Name']);
         	$data = $this->JsonEncode($data);
 
+             
+            $path = "userassets/".$table."/".$id."/";
+            if(isset($_FILES) && sizeof($_FILES) > 0)
+            {
+                $filedata = array();
+                foreach ($_FILES as $key => $value) 
+                {
+                    if(is_array($_FILES[$key]['name']))
+                    {
+                        if($_FILES[$key]['error'][0] == 0)
+                        {
+                            $files =  $this->reArrayFiles($_FILES[$key]);
+                            $this->save_multiple_files($path,$files,$table,$id);
+                        }
+                    }
+                    else
+                    {
+                        if($_FILES[$key]['error'] == 0)
+                        {
+                            $filedata['TableId'] = $id;
+                            $filedata['TableName'] = $table;
+                            $filedata["OriginalName"] = $this->save_file($path,$key);
+                            $filedata['FileName'] = $_FILES[$key]['name'];
+                            $filedata['FileType'] = $_FILES[$key]['type'];
+                            $filedata['FileSize'] = $_FILES[$key]['size'];
+                            $filedata['DateAdded'] = $this->date;
+                            $filedata['AddedBy'] = $this->user_data['Id'];
+                            $filedata['ModifiedBy'] = $this->user_data['Id'];
+
+                            $this->db->insert("files",$filedata);
+                        }
+                    }
+
+                }
+
+              
+            }
+
+
         	$this->db->update($table,$data,array("Id"=>$id));
         	$save = true;
         }
@@ -163,6 +272,7 @@ class Admin extends MY_Controller {
 
         if($save)
         {
+            $message['Id'] = $id;
         	$message['Success'] = true;
             $message['Error'] = false;
             $message['Message'] = '<div class="alert alert-success alert-dismissable">
