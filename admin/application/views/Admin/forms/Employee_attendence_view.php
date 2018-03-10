@@ -50,6 +50,9 @@
                 <li role="presentation">
                   <a href="#Yearly" aria-controls="Yearly" role="tab" data-toggle="tab">Leave Requests</a>
                 </li> 
+                 <li role="presentation">
+                  <a href="#timer_pauses" aria-controls="timer_pauses" role="tab" data-toggle="tab">Employee Timer Pauses</a>
+                </li> 
                 
             </ul> 
             <div class="tab-content" style="  overflow-y: auto; overflow-x: hidden;  ">
@@ -62,6 +65,9 @@
               </div>
               <div role="tabpanel" class="tab-pane" id="Yearly" style="width:99%; " >
                 <?php $this->load->view("Admin/tabs/Att_employee_leaves_requests"); ?>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="timer_pauses" style="width:99%; " >
+                <?php $this->load->view("Admin/tabs/Att_employee_timer_pauses"); ?>
               </div>
               
               

@@ -9,9 +9,28 @@
                     <div class="form-group padlft0">
                       <select class="form-control select2" id="change_leaves_request_year" > 
                         <option value="All">Till Now</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
+                        <?php 
+
+                               $this->db->select("DateAdded");
+                               $employee_data = $this->db->get_where("employees",array("Id"=>$this->session->userdata("Id")));
+                               $this->db->last_query();
+                               $employee_data->num_rows();
+                               if($employee_data->num_rows() > 0)
+                               {
+                                 $employee_info = $employee_data->result_array();
+                                 $employee_info[0]['DateAdded'];
+                                 $joined_year = date("Y", strtotime($employee_info[0]['DateAdded']));
+                                 $curent_year = date("Y");
+                                 for($year=$curent_year; $year >= $joined_year; $year--)
+                                 {
+                                   echo '<option value="'.$year.'">'.$year.'</option>';
+                                    
+                                 }
+                               }
+
+
+
+                            ?>
                     
                       </select>
                     </div>

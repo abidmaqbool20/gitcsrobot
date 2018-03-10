@@ -2192,4 +2192,112 @@ class Admin extends MY_Controller {
     }
 
 
+    public function get_employee_timer_paused()
+    {
+        $message = array();
+        $pauses = "";
+        $data = $this->input->post();  
+        $this->db->order_by("Id","DESC");
+        
+        if($data['type'] != "" && $data['type'] != "-1")
+        {
+            $this->db->where(array("Pause_Reason"=>$data['type']));
+        }
+
+        if($data['year'] != "")
+        {
+            $this->db->like("Paused_On_Time",$data['year'],'after');
+        }
+
+        
+        $timer_paused = $this->db->get_where("timer_paused",array("Deleted"=>0,"Employee_Id"=>$this->session->userdata("Id")));
+        $timer_paused->num_rows();
+        // echo $this->db->last_query();
+        if($timer_paused->num_rows() > 0)
+        {
+          foreach ($timer_paused->result() as $key => $value) 
+          { 
+                if($data['month'] != "" && $data['month'] != "-1")
+                {
+                     $month = date("m",strtotime($value->Paused_On_Time));
+                     if($month != $data['month'])
+                     {
+                        continue;
+                     }
+
+                }
+
+                $f_color = "#eee"; $b_color = "";
+                if($value->Resume_On_Time && $value->Resume_On_Time != "")
+                {
+                  $time_paused = strtotime($value->Resume_On_Time) - strtotime($value->Paused_On_Time);
+                  if($time_paused > 59)
+                  {
+                    $hours = round($time_paused / 60);
+                    $minutes = round($time_paused % 60);
+                    $time_paused = $hours." Hour ".$minutes." Minutes"; 
+                  }
+                  else
+                  {
+                    $time_paused = $time_paused." Minutes";
+                  }
+                }
+                else
+                {
+                  $time_paused = "Still Paused";
+                }
+
+                if($value->Status == 1)
+                { 
+                    $resume_time = date("l d-F, Y h:i:s", strtotime($value->Resume_On_Time)); 
+                }
+                else
+                {
+                    $resume_time = "";
+                }
+
+                if($value->Other_Pause_Reason != "")
+                {
+                     $pause_reason = '<p style="width: 100%;"><b>Other Reason : </b>'.$value->Other_Pause_Reason.'</p>'; 
+                }
+                else
+                {
+                     $pause_reason = "";
+                }
+
+                if($value->Pause_Reason_Explanation != "")
+                {
+                     $reason_explanation = '<p style="width: 100%;"><b>Reason Explanation : </b>'.$value->Pause_Reason_Explanation.'</p>'; 
+                }
+                else
+                {
+                     $reason_explanation = "";
+                }
+
+                $pauses .= '<div class="callout callout-info">
+                              <h4>Paused Time : ( '.$time_paused.' ) </h4>
+                              <p style="width: 100%;"><b>Reason : </b>'.str_replace("_", " ", $value->Pause_Reason).'</p>
+                              <p style="width: 100%;"><b style="color: '.$f_color.'">From : </b>'.date("l d-F, Y h:i:s", strtotime($value->Paused_On_Time)).'&nbsp;&nbsp;&nbsp;<b style="color: '.$f_color.'">To : </b> '.$resume_time.'</p>
+                               '.$pause_reason.'
+                               '.$reason_explanation.' 
+                            </div>';
+            }
+
+            $message['Success'] = true;
+            $message['records'] = $pauses;
+        }
+        else
+        {
+            $message['Success'] = false;
+            $message['records'] = $pauses;
+        }
+
+
+        echo json_encode($message);
+    }
+
+
+
+
+    
 }

@@ -10,6 +10,7 @@
       <li onclick="tab_loader(this,'Att_employee_previous')"><a data-toggle="tab" href="#3">Attendence Calander</a></li> 
       <li onclick="tab_loader(this,'Att_annual_holidays')"><a data-toggle="tab" href="#6">Public Holidays</a></li>  
       <li onclick="tab_loader(this,'Att_leaves_requests')"><a data-toggle="tab" href="#6">Leave Requests</a></li>  
+      <li onclick="tab_loader(this,'Att_employee_paused')"><a data-toggle="tab" href="#6">Timer Paused</a></li>  
     </ul>
   </div>
   <div id="tab_loader_div">

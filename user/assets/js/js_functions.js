@@ -601,3 +601,66 @@ function get_leaves_applications()
 		 
 	}
 }
+
+function get_employee_timer_paused($this)
+{
+	$year = $("#change_paused_year").val();
+	$month = $("#change_paused_month").val();
+	$type = $("#change_paused_reason").val();
+
+
+		$.ajax({
+				    type:'POST',
+				    url: $base_url+"User/get_employee_timer_paused",
+				    data: {'year':$year, 'month': $month, 'type': $type},  
+				    
+				    beforeSend:function(){
+				     
+				    }, 
+				    
+				    success:function(msg)
+				    { 
+				    	 
+				    	 $message = $.parseJSON(msg);
+				    	  
+				    	 if($message['Success'])
+				    	 {  
+				    	 	swal(
+							      'Success!',
+							       "Records are found!",
+							      'success'
+							    );
+
+				    	    $("#employee_timer_paused").html($message['records']);
+				    	 }
+				    	 else
+				    	 {
+				    	 	
+                			$("#employee_timer_paused").html("<span style='margin:50px auto; text-align:center;color:red;'><h4>Sorry! No record found...</h4></span>");
+				    	 	swal(
+							      'Error!',
+							       "No record found!",
+							      'error'
+							    );
+					    	 
+				    	 }
+ 
+				    },
+				    error:function(msg){
+
+
+						    swal(
+							      'Error!',
+							       "No record found!",
+							      'error'
+							    );
+				    	 	 
+				    },
+				    complete:function(){
+				    	
+				    	 
+				    }
+			   });
+		 
+		 
+}

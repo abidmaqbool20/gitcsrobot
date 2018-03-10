@@ -33,7 +33,7 @@
         </li>
         <li onclick="load_view(this,'notifications');">
           <a href="javascript:;">
-            <i class="fa fa-calendar"></i> <span>Notifications</span> 
+            <i class="fa fa-bell"></i> <span>Notifications</span> 
           </a>
           
         </li>

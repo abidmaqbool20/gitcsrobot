@@ -1,4 +1,4 @@
-   <section class="action_header_info h45 " style="">
+   <section class="action_header_info h45 " style="margin-top: -25px;">
       <div class="row" id="default">
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padlft0" >
           <h3 style="margin-top: 0;">Dilay Reports</h3>
@@ -10,9 +10,28 @@
                       <select class="form-control select2" id="change_report_year">
                         <option selected="selected" value="-1">Select Year </option>
                         <option value="All">Till Now</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
+                         <?php 
+
+                               $this->db->select("DateAdded");
+                               $employee_data = $this->db->get_where("employees",array("Id"=>$this->session->userdata("Id")));
+                               $this->db->last_query();
+                               $employee_data->num_rows();
+                               if($employee_data->num_rows() > 0)
+                               {
+                                 $employee_info = $employee_data->result_array();
+                                 $employee_info[0]['DateAdded'];
+                                 $joined_year = date("Y", strtotime($employee_info[0]['DateAdded']));
+                                 $curent_year = date("Y");
+                                 for($year=$curent_year; $year >= $joined_year; $year--)
+                                 {
+                                   echo '<option value="'.$year.'">'.$year.'</option>';
+                                    
+                                 }
+                               }
+
+
+
+                            ?>
                     
                       </select>
                     </div>

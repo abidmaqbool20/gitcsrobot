@@ -1,4 +1,7 @@
-
+$('.modal').on('hidden.bs.modal', function(){
+  //remove the backdrop
+  $('.modal-backdrop').remove();
+})
     function init_events(ele) {
       ele.each(function () {
 
