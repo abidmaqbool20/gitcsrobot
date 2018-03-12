@@ -7,7 +7,8 @@
   <div class="h45">
     <ul class="nav nav-pills">
       <li class="active" onclick="tab_loader(this,'Att_dashboard')"><a data-toggle="tab" href="#2">Attendence Dashboard</a></li>
-      <li onclick="tab_loader(this,'Att_employee_today')"><a data-toggle="tab" href="#3">Today Attendence Board</a></li> 
+      <li onclick="tab_loader(this,'Att_employee_today')"><a data-toggle="tab" href="#3">Today Attendence Board</a></li>
+      <li onclick="tab_loader(this,'Att_all_employee_timer_pauses')"><a data-toggle="tab" href="#3">Employee Time Pauses</a></li> 
       <li onclick="tab_loader(this,'Att_manage_leaves')"><a data-toggle="tab" href="#5">Manage Leaves</a></li>
       <li onclick="tab_loader(this,'Att_annual_holidays')"><a data-toggle="tab" href="#6">Public Holidays</a></li>  
       <li onclick="tab_loader(this,'Att_leaves_requests')"><a data-toggle="tab" href="#6">Leaves Request</a></li>  

@@ -36,6 +36,10 @@
                     </div>
                 </div>
               </div>
+              <div class="col-md-8"></div>
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " style="text-align: right;"   >
+                <button class="btn btn-success pull-right btn-sm"  style="font-size: 15px;"  onclick="load_form(this,'Employee_signin_form');"><i class="fa fa-arrow-left"></i>&nbsp;Sign In Employee</button>
+              </div> 
                
             </div> 
           </div>
@@ -141,9 +145,18 @@
                       <div class="widget-user-image">
                          <?= $picture; ?>
                       </div>
-                      
-                      <h6 class="widget-user-username" style="font-weight: bold;"><a href="javascript:;" style="color:#fff;" onclick="load_edit_form(this,'Employee_attendence_view',<?php echo $value->Employee_Id; ?>)" ><?= $value->FirstName." ".$value->LastName; ?></a></h6>
-                      <span class="widget-user-desc">(&nbsp;<?= $value->Department_Name; ?>&nbsp;)</span> 
+                        <div class="dropdown action-dropdown"  id="showafter" style="float: right;" >
+                          <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                          <ul class="dropdown-menu">
+                            
+                            <li><a href="javascript:;" onclick="load_edit_form(this,'Employee_signin_form',<?= $value->Id ?>)"><i class="fa fa-pencil" ></i>&nbsp;&nbsp;Edit </a></li>
+                            <li><a href="javascript:;" onclick="sign_out(<?= $value->Id ?>)" ><i class="fa fa-arrow-right"></i>&nbsp;&nbsp; Sign Out </a></li>
+                            
+                          </ul>
+                        </div>
+                      <h3 class="" style="padding-left: 62px; text-align: left; width: 90%; margin-top: 5px;"><a href="javascript:;" style="color:#fff;" onclick="load_edit_form(this,'Employee_attendence_view',<?php echo $value->Employee_Id; ?>)" ><?= $value->FirstName." ".$value->LastName; ?></a></h3>
+
+                      <span class="widget-user-desc" style="margin-left: 10px;">(&nbsp;<?= $value->Department_Name; ?>&nbsp;)</span> 
                     </div>
                     <div class="box-footer no-padding">
                       <ul class="nav nav-stacked">

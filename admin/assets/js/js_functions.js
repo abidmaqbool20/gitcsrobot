@@ -1758,12 +1758,13 @@ function get_employee_timer_paused($this)
 	$year = $("#change_paused_year").val();
 	$month = $("#change_paused_month").val();
 	$type = $("#change_paused_reason").val();
+	$employee = $("#paused_employee").val();
 
 
 		$.ajax({
 				    type:'POST',
 				    url: $base_url+"Admin/get_employee_timer_paused",
-				    data: {'year':$year, 'month': $month, 'type': $type},  
+				    data: {'year':$year, 'month': $month, 'type': $type, 'employee': $employee},  
 				    
 				    beforeSend:function(){
 				     
@@ -1814,4 +1815,65 @@ function get_employee_timer_paused($this)
 			   });
 		 
 		 
+}
+
+function get_emplyee_data($this)
+{
+	$id = $($this).val();
+	if($id != "")
+	{
+		$.post($base_url+"Admin/get_emplyee_data",{ id: $id}, function(response){
+			$data = $.parseJSON(response);
+			console.log($data);
+			if($data != "")
+			{
+				$("#Sign_In_Time").val($data.Sign_In_Time);
+				$("#Sign_Out_Time").val($data.Sign_Out_Time);
+				$("#Late_Consider_Time").val($data.Late_Consider_Time);
+				$("#Token").val($data.Token);
+			}
+			 
+		});
+	}
+}
+
+
+function sign_out($id)
+{
+	swal({
+		    title: 'Are you sure?',
+		    text: "You won't be able to resign in to this employee for today.!",
+		    type: 'warning',
+		    showCancelButton: true,
+		    confirmButtonColor: '#3085d6',
+		    cancelButtonColor: '#d33',
+		    confirmButtonText: 'Confirm!'
+
+		}).then(function($action){
+				  
+				$action = $.makeArray($action);
+				if($action[0].dismiss && $action[0].dismiss == "cancel")
+				{ 
+			    	swal("Cancelled", "The action is aborted successfully :)", "error");
+				}
+				else if($id)
+				{ 
+ 					console.log("Id == "+$id);
+					$.post($base_url+"Admin/employee_signout",{'id':$id}, function(response)
+					{
+						console.log(response);
+						$message = $.parseJSON(response);
+						 if($message['Success'])
+						 {
+						 	swal("Sign Out!", $message['Message'], "success");
+						 }
+						 else
+						 {
+						 	swal("Error!", $message['Message'], "error");
+						 }
+						
+					});
+				}
+				
+		});
 }

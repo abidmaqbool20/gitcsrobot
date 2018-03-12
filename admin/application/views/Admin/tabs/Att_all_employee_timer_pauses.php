@@ -1,4 +1,3 @@
-   <input type="hidden" name="paused_employee" id="paused_employee" value="<?php echo $id;  ?>">
    <section class="action_header_info h45 " style="margin-top: -20px;">
       <div class="row" id="default">
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padlft0" >
@@ -8,9 +7,35 @@
            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pull-left padlft0">
                 <div class="form-group padlft0">
                     <div class="form-group padlft0">
+                      <select class="form-control select2" id="paused_employee" onchange="get_employee_timer_paused(this)" > 
+                       
+                        <?php 
+
+                               $this->db->select("FirstName,LastName,Id");
+                               $this->db->order_by("FirstName","ASC");
+                               $employee_data = $this->db->get_where("employees",array("Deleted"=> 0));  
+                               if($employee_data->num_rows() > 0)
+                               {
+                                  foreach($employee_data->result() as $key => $value) 
+                                  {
+                                    echo '<option value="'.$value->Id.'">'.$value->FirstName." ".$value->LastName.'</option>';
+                                  }
+                               }
+
+
+
+                            ?>
+                    
+                      </select>
+                    </div>
+                </div>
+          </div>
+           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pull-left padlft0">
+                <div class="form-group padlft0">
+                    <div class="form-group padlft0">
                       <select class="form-control select2" id="change_paused_year" onchange="get_employee_timer_paused(this)" > 
                        
-                            <?php  
+                         <?php  
                                  $start_year = date("Y", strtotime("2010-01-01"));
                                  $curent_year = date("Y");
                                  for($year=$curent_year; $year >= $start_year; $year--)
@@ -84,7 +109,7 @@
                         $this->db->like("Paused_On_Time",$curent_year,'after');
                     }
                     $this->db->order_by("Id","DESC"); 
-                    $timer_paused = $this->db->get_where("timer_paused",array("Deleted"=>0 ,"Employee_Id"=>$id));
+                    $timer_paused = $this->db->get_where("timer_paused",array("Deleted"=>0));
                     $timer_paused->num_rows();
                    
                     if($timer_paused->num_rows() > 0)

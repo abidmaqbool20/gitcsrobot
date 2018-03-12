@@ -851,7 +851,7 @@ class User extends MY_Controller
         $Signed_In_Id = $this->session->userdata("Signed_In_Id");
         $this->db->order_by("Id","DESC");
         $signed_in_data = $this->db->get_where("attendance",array("Sign_Out IS NULL"=>null,"Sign_In !="=>"", "Employee_Id"=>$user_id));
-        $signedInDate = $signed_in_data->result_array();
+        $signedInData = $signed_in_data->result_array();
         if($this->session->userdata("User_Type") == "Admin" || $signed_in_data->num_rows() > 0  )
         {
 
@@ -865,7 +865,7 @@ class User extends MY_Controller
             );
 
 
-            $this->db->update("attendance",$data,array("Id"=>$signedInDate[0]['Id']));
+            $this->db->update("attendance",$data,array("Id"=>$signedInData[0]['Id']));
 
             $message['Success'] = true;
             $message['Message'] = '<div class="alert alert-success alert-dismissable">

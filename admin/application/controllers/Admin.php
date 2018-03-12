@@ -2204,13 +2204,21 @@ class Admin extends MY_Controller {
             $this->db->where(array("Pause_Reason"=>$data['type']));
         }
 
+
+        if($data['employee'] != "")
+        {
+            $this->db->where(array("Employee_Id",$data['employee'] ));
+        }
+
+
         if($data['year'] != "")
         {
             $this->db->like("Paused_On_Time",$data['year'],'after');
         }
 
         
-        $timer_paused = $this->db->get_where("timer_paused",array("Deleted"=>0,"Employee_Id"=>$this->session->userdata("Id")));
+        
+        $timer_paused = $this->db->get_where("timer_paused",array("Deleted"=>0));
         $timer_paused->num_rows();
         // echo $this->db->last_query();
         if($timer_paused->num_rows() > 0)
@@ -2295,6 +2303,104 @@ class Admin extends MY_Controller {
 
         echo json_encode($message);
     }
+
+
+    public function get_emplyee_data()
+    {
+        $employee_info = array();
+        $id = $this->input->post("id");
+        if($id != "")
+        {   
+            $date = date("Y-m-d");
+            $this->db->select("Sign_In_Time,Sign_Out_Time,Late_Consider_Time");
+            $employee_rec = $this->db->get_where("employees",array("Id"=>$id));
+
+            if($employee_rec->num_rows() > 0)
+            {
+                $employee_Data = $employee_rec->result_array();
+                $employee_info = $employee_Data[0];
+
+                $this->db->order_by("Id","DESC");
+                $this->db->select("Token");
+                $this->db->like("Date_Generated",$date,"after");
+                $token_data = $this->db->get_where("tokens",array("Generated_For"=>$id));
+
+                if($token_data->num_rows() > 0)
+                {
+                    $token_data = $token_data->result_array();
+                    $token = $token_data[0]['Token'];
+                    $employee_info['Token'] = $token;
+                }
+                else
+                {
+                    $token = $this->encryption->encrypt($this->input->ip_address()."/".strtotime(date("Y-m-d H:i:s")));
+                    $token = md5($token);
+
+                    $token_data = array(
+
+                                            "Token" => $token,
+                                            "Generated_For" => $id,
+                                            "Generated_For_Table" => "employees",
+                                            "Date_Generated" => date("Y-m-d H:i:s"),
+                                            "Token_Purpose" => "Sign_In",
+                                            "Token_Status" => "New",
+                                       );
+
+
+                    $this->db->insert("tokens",$token_data);
+                    $employee_info['Token'] = $token;
+
+                }
+            }
+
+            
+        }
+
+        echo json_encode($employee_info);
+    }
+
+
+    public function employee_signout()
+    {
+        $message = array();
+        $data = array();
+        $date = date("Y-m-d");
+        $id = $this->input->post("id"); 
+        $this->db->order_by("Id","DESC");
+        $signed_in_data = $this->db->get_where("attendance",array("Id"=>$id));
+        $signedInData = $signed_in_data->result_array();
+        
+        if($this->session->userdata("User_Type") == "Admin" || $signed_in_data->num_rows() > 0  )
+        {
+
+            $token_data = array( "Token_Status" => "Expired" );
+            $this->db->update("tokens",$token_data,array("Token"=>$signedInData[0]['Token']));
+
+         
+            $time_now = date("Y-m-d H:i:s"); 
+            $data = array(
+                'Sign_Out' => $time_now 
+            );
+
+
+            $this->db->update("attendance",$data,array("Id"=>$id));
+
+            $message['Success'] = true;
+            $message['Message'] = '<div class="alert alert-success alert-dismissable">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                    Success! You have loged out successfully... </div>';
+        }
+        else
+        {
+            $message['Success'] = false;
+            $message['Message'] = '<div class="alert alert-danger alert-dismissable">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                    Error! You have already loged out or you are not signed in yet. </div>';
+        }
+        
+        echo json_encode($message);
+    }
+
 
 
 
