@@ -54,6 +54,12 @@
               </a>
             </li> 
             
+               <li onclick="load_view(this,'announcements')">
+              <a href="javascript:;">
+                <i class="fa fa-circle-o"></i> Announcements
+              </a>
+            </li> 
+            
              
           </ul>
         </li>

@@ -2402,7 +2402,80 @@ class Admin extends MY_Controller {
     }
 
 
+    public function get_announcement()
+    {
+        $records = "";
+        $message = array();
+        $data = $this->input->post();
+        if(isset($data['year']) && $data['year'] != "")
+        {
+            $this->db->like("DateAdded",$data['year'],"after");
+        }
 
+        if(isset($data['month']) && $data['month'] != "")
+        {
+            $date = $data['year']."-".$data['month'];
+            $this->db->like("DateAdded",$date,"after");
+        }
+
+        if(isset($data['type']) && $data['type'] != "")
+        {
+            
+            $this->db->where("Type",$data['type']);
+        }
+
+        $announcements = $this->db->get_where("announcements",array("Deleted"=>0));
+        if($announcements->num_rows() > 0)
+        {
+            foreach ($announcements->result() as $key => $value) 
+            { 
+                $f_color = "";
+                $b_color = "info";  
+                 
+                $records .='<div class="callout callout-'.$b_color.'" id="announcements_row_'.$value->Id.'">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                      <h4>'.$value->Title.'  </h4>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <div class="dropdown action-dropdown"  id="showafter" style="float: right;" >
+                                        <button class="dropdown-toggle drplist transp"  data-toggle="dropdown"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                          <ul class="dropdown-menu" style="margin-left: -125px;"> 
+                                            <li><a href="javascript:;" onclick="load_edit_form(this,\'Org_activity_announcement_form\','.$value->Id.')"><i class="fa fa-pencil" ></i>&nbsp;&nbsp;Edit</a></li> 
+                                            <li><a href="javascript:;" onclick="delete_record(\'announcements\','.$value->Id.',this)"><i class="fa fa-trash" ></i>&nbsp;&nbsp;Delete</a></li> 
+                                          </ul>
+                                        </div>
+
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <p style="width: 100%;"><b style="color: '.$f_color.'">From : </b>'.date("h:i:s", strtotime($value->From_Time)).'&nbsp;&nbsp;&nbsp;<b style="color:'.$f_color.'">To : </b>'.date("h:i:s", strtotime($value->To_Time)).'</p>
+                                      <p style="width: 100%;"><b style="color: '.$f_color.'">Activity Date : </b>'.$value->Date.'</p>
+                                      <p style="width: 100%;"><b style="color: '.$f_color.'">Date Added : </b> '.$value->DateAdded.'</p>
+                                      <p style="width: 100%;">'.$value->Description.'</p>
+                                    </div> 
+                                  </div>  
+                                </div>';
+
+            }
+        }
+
+
+        if($records != "")
+        {
+            $message['Success'] = true;
+            $message['Message'] = $records;
+        }
+        else
+        {
+            $message['Success'] = false;
+            $message['Message'] = $records;
+        } 
+
+        echo json_encode($message);   
+
+    }
 
 
     

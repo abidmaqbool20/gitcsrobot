@@ -1877,3 +1877,31 @@ function sign_out($id)
 				
 		});
 }
+
+
+function  get_announcement($type)
+{
+	$year = $("#Activity_year").val();
+	$month = $("#Activity_month").val();
+	 
+	$.post($base_url+"Admin/get_announcement",{ 'year': $year, 'month':$month, 'type': $type }, function(response){
+		$data = $.parseJSON(response);
+	 	 
+		if($data['Success'])
+		{ 
+			$("#org_activities_div").html($data['Message']);
+		}
+		else
+		{
+			$("#org_activities_div").html("");
+		 	swal(
+			      'Empty!',
+			       "No record found!",
+			      'error'
+			    );
+		}
+		 
+	});
+	 
+
+}

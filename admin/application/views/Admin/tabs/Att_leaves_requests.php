@@ -10,9 +10,16 @@
                     <div class="form-group padlft0">
                       <select class="form-control select2" id="All_change_leaves_request_year" > 
                         <option value="All">Till Now</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
+                            <?php  
+                                 $start_year = date("Y", strtotime("2010-01-01"));
+                                 $curent_year = date("Y");
+                                 for($year=$curent_year; $year >= $start_year; $year--)
+                                 {
+                                   echo '<option value="'.$year.'">'.$year.'</option>';
+                                    
+                                 }  
+                            ?>
+                    
                     
                       </select>
                     </div>
