@@ -9,7 +9,7 @@
       
       <li onclick="tab_loader(this,'Announcements_activity')"><a data-toggle="tab" href="#5">Activity Announcement</a></li>
       <li onclick="tab_loader(this,'Announcements_event')"><a data-toggle="tab" href="#6">Event Announcement</a></li>  
-      <li onclick="tab_loader(this,'Announcements_holiday')"><a data-toggle="tab" href="#6">Leave Announcement</a></li>  
+      <li onclick="tab_loader(this,'Announcements_holiday')"><a data-toggle="tab" href="#6">Holiday Announcement</a></li>  
  
     </ul>
   </div>

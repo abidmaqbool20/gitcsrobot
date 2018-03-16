@@ -185,75 +185,13 @@
                     </div>
                   </div>
                 </div>
-                <?php }} ?>
-
-
-               <!--  <?php 
-
-
-                //Show all absent employees
-
-                  //  if(!empty($signed_in_employees) && sizeof($signed_in_employees) > 0)
-                  //  {
-                  //    $this->db->where_not_in("employees.Id",$signed_in_employees); 
-                  //  }
-                 
-                  // $this->db->where(array("employees.Deleted"=>0,"employees.Status"=>1));
-                  // $this->db->select("employees.Id,employees.FirstName,employees.LastName,department.Name as Department_Name,employees.Photo");
-                  // $this->db->from("employees"); 
-                  // $this->db->join("department","department.Id = employees.Department_Id","left");
-                  // $this->db->order_by("employees.Seniority_Level",'DESC');
-                  // $employees = $this->db->get();
-
-                  // if($employees->num_rows() > 0)
-                  // {
-                  //   foreach ($employees->result() as $key => $value) {
-                      
-                  //      $picture = "";
-                  //      if($value->Photo && $value->Photo == "")
-                  //       {
-                  //         $src = USERASSETSPATH."/employees/".$value->Id."/".$value->Photo;
-                  //         $picture = '<img src="'.$src.'">';
-                  //       }
-                  //       else
-                  //       {
-                  //         $src = ASSETSPATH."/images/profile.png";
-                  //         $picture = '<img src="'.$src.'">';
-                  //       }
-                ?>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <div class="box box-widget widget-user-2"> 
-                    <div class="widget-user-header bg-red">
-                      <div class="widget-user-image">
-                         <?= $picture; ?>
-                      </div>
-                      
-                      <h6 class="widget-user-username" style="font-weight: bold;"><a href="javascript:;" style="color:#fff;" onclick="load_edit_form(this,'Employee_attendence_view',<?php echo $value->Id; ?>)" ><?= $value->FirstName." ".$value->LastName; ?></a></h6>
-                      <span class="widget-user-desc">(&nbsp;<?= $value->Department_Name; ?>&nbsp;)</span> 
+                 <?php }}else{   ?>
+                    <div style="margin: 50px auto; text-align: center;">
+                      <img class="no-record-found" src="<?= ASSETSPATH."images/no-record.png"; ?>">
                     </div>
-                    <div class="box-footer no-padding">
-                      <ul class="nav nav-stacked">
-                        <li> 
-                            <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
-                              <div class="col-md-12">
-                                  <div class="col-md-6" >  Not Sign In Yet!  </div>
-                                    
-                              </div> 
-                            </div> 
-                        </li>
+                  <?php } ?>
 
-                        
-                        <li onclick="show_emp_late_info(<?php $value->Id; ?>);">
-                            <a href="javascript:;">
-                              <b> Late Reason : </b>  
-                               <span style="color:red;"> Absent Today </span>
-                            </a>
-                        </li> 
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <?php //}} ?> -->
+ 
               </div>
             </div>
            

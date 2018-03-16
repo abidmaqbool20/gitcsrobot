@@ -70,6 +70,7 @@ $emp_data = $emp_data[0];
       <div class="row">
        <?php  
 
+          date_default_timezone_set("Asia/Karachi");
           $date = date("Y-m-d");
           //$this->db->like("DateAdded",$date,'after');
           $attendance = $this->db->get_where("attendance",array("Deleted"=>0,"Employee_Id"=>$this->session->userdata("Id"),"Sign_Out"=>NULL));
@@ -376,7 +377,7 @@ function start_timer($target = '',$global)
 
   $.post("<?php echo base_url("User/get_user_puses"); ?>",{'global':$global},function(response){
     
-     $data = $.parseJSON(response);
+     $data = $.parseJSON(response); 
      if($data['interval'] != "not")
      {
         if($data['interval'])

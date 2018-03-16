@@ -59,6 +59,8 @@
   }
   else
   {     
+
+
         $this->db->select("ClosingTime as Sign_In_Time,OpeningTime as Sign_Out_Time");
         $org_time = $this->db->get_where("organization",array("Deleted"=>0,"Status"=>1));
         if($org_time->num_rows() > 0)
@@ -74,11 +76,25 @@
         {
           $org_Leaves_data = $org_Leaves->result_array();
           $edit_record_data = $org_Leaves_data[0];
-          $edit_record_data['Id'] = $id;
+          
+          if(isset($id) && $id == "")
+          {
+             $edit_record_data['Id'] = 0;
+          }
+          else
+          {
+            $edit_record_data['Id'] = $id;
+          }
         }
+
 
         $edit_record_data = array_merge($org_time_data,$edit_record_data);
         $edit_record_data['Late_Consider_Time'] = 0; 
+
+        $edit_record_data['Remaining_Casual_Leaves'] = 0; 
+        $edit_record_data['Remaining_Sick_Leaves'] = 0; 
+        $edit_record_data['Remaining_HalfDay_Leaves'] = 0; 
+        $edit_record_data['Remaining_Unpaid_Leaves'] = 0; 
   }
 
 ?>

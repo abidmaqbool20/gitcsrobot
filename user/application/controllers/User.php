@@ -1188,9 +1188,7 @@ class User extends MY_Controller
             }
 
             //echo $this->db->last_query();
-            echo json_encode($message);
-       
-
+            echo json_encode($message);   
     }
 
     public function get_user_puses()
@@ -1237,11 +1235,12 @@ class User extends MY_Controller
                         }
                     }
 
-                    $sign_in_tonow_time = ( strtotime(date("Y-m-d H:i:s")) - strtotime($sign_in_data[0]['DateAdded']) );
+                     
+                    $sign_in_tonow_time = ( strtotime(date("Y-m-d H:i:s")) - strtotime(date("Y-m-d")." ".$sign_in_data[0]['Sign_In']));
 
                     $interval =  $sign_in_tonow_time - $time_used;
                    
-                    //echo " interval  = ".$interval .") Time used =  ".$time_used." ) sign_in_tonow_time =".$sign_in_tonow_time." )";
+                    // echo " interval  = ".$interval .") Time used =  ".$time_used." ) sign_in_tonow_time =".$sign_in_tonow_time." )";
                 } 
             } 
              
@@ -1254,9 +1253,8 @@ class User extends MY_Controller
                 $sign_in_info = $this->db->get_where("attendance",array("Id"=>$this->session->userdata("Signed_In_Id")));
                 if($sign_in_info->num_rows() > 0)
                 {
-                    $sign_in_data = $sign_in_info->result_array();
-                    
-                    $sign_in_tonow_time = strtotime(date("Y-m-d H:i:s")) - strtotime($sign_in_data[0]['DateAdded']);
+                    $sign_in_data = $sign_in_info->result_array(); 
+                    $sign_in_tonow_time = strtotime(date("Y-m-d H:i:s")) - strtotime( date("Y-m-d")." ".$sign_in_data[0]['Sign_In']);
 
                     $interval = $sign_in_tonow_time;
 
@@ -1289,7 +1287,7 @@ class User extends MY_Controller
         { 
             $data['Employee_Id'] = $this->session->userdata("Id");
             $data['Token'] = $this->session->userdata("Sign_In_Token");
-
+            $data['Paused_On_Time'] = $this->date;
             $this->db->insert("timer_paused",$data);
             echo true;
         }
